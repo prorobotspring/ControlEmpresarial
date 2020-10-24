@@ -1,0 +1,1095 @@
+[2015Nov24 08:32:56,487][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2015Nov24 08:32:56,515][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2015Nov24 08:32:56,573][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2015Nov24 08:32:56,577][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 0]
+[2015Nov24 08:32:56,580][ERROR][][main RC.java:779][Debe ingresar el tipo de Proceso y el CICLO (M03 - M05) como argumentos para la ejecucion]
+[2015Nov24 08:33:42,540][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2015Nov24 08:33:42,562][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2015Nov24 08:33:42,596][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2015Nov24 08:33:42,599][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2015Nov24 08:33:42,603][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2015Nov24 08:33:42,606][INFO ][][main RC.java:737][args[1] = M05]
+[2015Nov24 08:33:42,609][INFO ][1448370222609_M05][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov24 08:33:42,625][DEBUG][1448370222609_M05][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2015Nov24 08:33:42,660][DEBUG][1448370222609_M05][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:33:50,888][DEBUG][1448370222609_M05][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:33:54,296][INFO ][1448370222609_M05][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7736167}}]
+[2015Nov24 08:33:54,492][INFO ][1448370222609_M05][procesarPreCierre RC.java:124][Id de proceso generado: 7736167]
+[2015Nov24 08:33:54,495][DEBUG][1448370222609_M05][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2015Nov24 08:33:54,509][DEBUG][1448370222609_M05][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:33:54,599][DEBUG][1448370222609_M05][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:33:56,975][INFO ][1448370222609_M05][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:33:57,381][INFO ][1448370222609_M05][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2015Nov24 08:33:57,401][DEBUG][1448370222609_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2015Nov24 08:33:57,480][INFO ][1448370222609_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2015Nov24 08:33:57,482][DEBUG][1448370222609_M05][executeProcIsDirectNRC RCHelper.java:325][RCHelper executeProcIsDirectNRC]
+[2015Nov24 08:33:57,507][DEBUG][1448370222609_M05][init IsDirectNRCDelegator.java:86][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov24 08:33:57,720][DEBUG][1448370222609_M05][execute IsDirectNRCDelegator.java:127][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:33:57,820][INFO ][1448370222609_M05][execute IsDirectNRCDelegator.java:145][Resultado IsRedirectNRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.isredirectnrc(?, ?) ejecutado con exito | info:  | vto: {isRedirect=0}}]
+[2015Nov24 08:33:57,828][DEBUG][1448370222609_M05][validarRedirectCuenta RCHelper.java:379][RCHelper validarRedirectCuenta]
+[2015Nov24 08:33:57,830][INFO ][1448370222609_M05][validarRedirectCuenta KenanDelegator.java:125][La funcion RedirectStatus fue FALSO ]
+[2015Nov24 08:33:57,832][DEBUG][1448370222609_M05][executeValidarCuentaSIR RCHelper.java:397][RCHelper executeValidarCuentaSIR]
+[2015Nov24 08:33:57,857][DEBUG][1448370222609_M05][init ListaNegraDelegator.java:87][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov24 08:33:57,933][DEBUG][1448370222609_M05][execute ListaNegraDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:33:59,443][INFO ][1448370222609_M05][execute ListaNegraDelegator.java:148][Resultado Validar Cuenta SIR: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta SIR ejecutado con exito | info:  | vto: {existe=N}}]
+[2015Nov24 08:33:59,534][DEBUG][1448370222609_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2015Nov24 08:33:59,543][DEBUG][1448370222609_M05][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:33:59,679][DEBUG][1448370222609_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:00,044][INFO ][1448370222609_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:00,128][INFO ][1448370222609_M05][procesarPreCierre RC.java:174][La Cuenta: 12018912 ha sido actualizada con status Parcialmente Ejecutado]
+[2015Nov24 08:34:00,130][DEBUG][1448370222609_M05][executeValidarEstatus RCHelper.java:366][RCHelper executeValidarEstatus]
+[2015Nov24 08:34:00,131][DEBUG][1448370222609_M05][executeProcObtenerBeneficiario RCHelper.java:122][RCHelper executeProcobtenerBeneficiario]
+[2015Nov24 08:34:00,139][DEBUG][1448370222609_M05][init ObtenerBeneficiarioDelegator.java:89][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:34:00,192][DEBUG][1448370222609_M05][execute ObtenerBeneficiarioDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:00,293][INFO ][1448370222609_M05][execute ObtenerBeneficiarioDelegator.java:151][Resultado Obtener Beneficiario: Procedure: PROCESO_PKG.obtenerBeneficiary(?, ?, ?, ?) ejecutado con exito]
+[2015Nov24 08:34:00,609][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:00,619][DEBUG][1448370222609_M05][init CrearDetalleProcesoDelegator.java:90][Metodo de inicializacion de contexto para CrearDetalleProcesoDelegator]
+[2015Nov24 08:34:00,725][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:00,785][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165729131 para el GSM: 584125953760]
+[2015Nov24 08:34:00,787][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165729131}}]
+[2015Nov24 08:34:00,864][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:00,910][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:00,976][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165729401 para el GSM: 584125953770]
+[2015Nov24 08:34:00,978][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165729401}}]
+[2015Nov24 08:34:01,051][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:01,088][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:01,161][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165729671 para el GSM: 582123163284]
+[2015Nov24 08:34:01,163][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165729671}}]
+[2015Nov24 08:34:01,252][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:01,288][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:01,340][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165729941 para el GSM: 582123163282]
+[2015Nov24 08:34:01,341][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165729941}}]
+[2015Nov24 08:34:01,442][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:01,478][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:01,527][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165730211 para el GSM: 582953114707]
+[2015Nov24 08:34:01,528][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165730211}}]
+[2015Nov24 08:34:01,620][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:01,660][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:01,709][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165730481 para el GSM: 584121923715]
+[2015Nov24 08:34:01,711][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165730481}}]
+[2015Nov24 08:34:01,803][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:01,838][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:01,886][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165730751 para el GSM: 584120776086]
+[2015Nov24 08:34:01,888][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165730751}}]
+[2015Nov24 08:34:01,976][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,010][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,055][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165731021 para el GSM: 584122107271]
+[2015Nov24 08:34:02,057][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165731021}}]
+[2015Nov24 08:34:02,154][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,186][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,230][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165731291 para el GSM: 584127083032]
+[2015Nov24 08:34:02,232][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165731291}}]
+[2015Nov24 08:34:02,318][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,360][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,400][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165731561 para el GSM: 584127083030]
+[2015Nov24 08:34:02,401][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165731561}}]
+[2015Nov24 08:34:02,504][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,529][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,567][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165731831 para el GSM: 584125967896]
+[2015Nov24 08:34:02,568][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165731831}}]
+[2015Nov24 08:34:02,656][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,679][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,710][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165732101 para el GSM: 584122107275]
+[2015Nov24 08:34:02,711][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165732101}}]
+[2015Nov24 08:34:02,796][DEBUG][1448370222609_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov24 08:34:02,819][DEBUG][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:02,849][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165732371 para el GSM: 584123170054]
+[2015Nov24 08:34:02,850][INFO ][1448370222609_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165732371}}]
+[2015Nov24 08:34:02,947][INFO ][1448370222609_M05][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2015Nov24 08:34:02,956][DEBUG][1448370222609_M05][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2015Nov24 08:34:02,973][DEBUG][1448370222609_M05][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2015Nov24 08:34:02,997][DEBUG][1448370222609_M05][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:03,140][INFO ][1448370222609_M05][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan T_LPR_Fijo_Control_Super={descripcionProducto=Plan T_LPR_Fijo_Control_Super, idProducto=2126, costoVigenteProducto=62050, nombreProducto=BAS-MAS-PRE-PLAN-00051}, Plan T_LPR_Premium_Control={descripcionProducto=Plan T_LPR_Premium_Control, idProducto=2130, costoVigenteProducto=28300, nombreProducto=MOV-MAS-PRE-PLAN-00373}, Plan T_LPR_Super_Control={descripcionProducto=Plan T_LPR_Super_Control, idProducto=2123, costoVigenteProducto=34925, nombreProducto=MOV-MAS-PRE-PLAN-00376}, Plan T_LPR_Mega_Plus_Control={descripcionProducto=Plan T_LPR_Mega_Plus_Control, idProducto=2129, costoVigenteProducto=91725, nombreProducto=MOV-MAS-PRE-PLAN-00364}, Plan T_LPR_Plus_Control={descripcionProducto=Plan T_LPR_Plus_Control, idProducto=2125, costoVigenteProducto=18050, nombreProducto=MOV-MAS-PRE-PLAN-00372}, Plan T_LPR_Platinum_Control={descripcionProducto=Plan T_LPR_Platinum_Control, idProducto=2131, costoVigenteProducto=49375, nombreProducto=MOV-MAS-PRE-PLAN-00371}, Plan T_LPR_Microempresa_Control={descripcionProducto=Plan T_LPR_Microempresa_Control, idProducto=2124, costoVigenteProducto=9025, nombreProducto=MOV-MAS-PRE-PLAN-00365}, Plan T_LPR_Mega_Control={descripcionProducto=Plan T_LPR_Mega_Control, idProducto=2128, costoVigenteProducto=60700, nombreProducto=MOV-MAS-PRE-PLAN-00363}, Plan T_LPR_Fijo_Control_Plus={descripcionProducto=Plan T_LPR_Fijo_Control_Plus, idProducto=2127, costoVigenteProducto=31025, nombreProducto=BAS-MAS-PRE-PLAN-00050}}}]
+[2015Nov24 08:34:03,150][DEBUG][1448370222609_M05][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2015Nov24 08:34:03,158][DEBUG][1448370222609_M05][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2015Nov24 08:34:03,182][DEBUG][1448370222609_M05][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:03,216][INFO ][1448370222609_M05][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2015Nov24 08:34:03,252][INFO ][1448370222609_M05][procesarCierre RC.java:357][Inicio de procesamiento de contratos por CERRAR]
+[2015Nov24 08:34:03,258][INFO ][1448370222609_M05][procesarCierre RC.java:362][Inicio de procesamiento de contrato: 197]
+[2015Nov24 08:34:03,259][DEBUG][1448370222609_M05][executeProcCrearBatchDebito RCHelper.java:176][RCHelper executeProcCrearBatchDebito]
+[2015Nov24 08:34:03,274][DEBUG][1448370222609_M05][init CrearBatchDebitoDelegator.java:85][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov24 08:34:03,297][DEBUG][1448370222609_M05][execute CrearBatchDebitoDelegator.java:126][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:03,322][DEBUG][1448370222609_M05][execute CrearBatchDebitoDelegator.java:140][Detalle de proceso generado. IdBatchDebito: 14708639]
+[2015Nov24 08:34:03,324][INFO ][1448370222609_M05][execute CrearBatchDebitoDelegator.java:148][Resultado Crear Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearBatchDebito(?, ?, ?) ejecutado con exito | info:  | vto: {idBatchDebito=14708639}}]
+[2015Nov24 08:34:03,407][DEBUG][1448370222609_M05][executeProcObtenerBeneficiarioCierre RCHelper.java:241][RCHelper executeObtenerBeneficiarioCierre]
+[2015Nov24 08:34:03,415][DEBUG][1448370222609_M05][init ObtenerBeneficiarioCierreDelegator.java:90][Metodo de inicializacion de contexto para ObtenerBeneficiarioCierreDelegator]
+[2015Nov24 08:34:03,438][DEBUG][1448370222609_M05][execute ObtenerBeneficiarioCierreDelegator.java:131][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:03,477][INFO ][1448370222609_M05][execute ObtenerBeneficiarioCierreDelegator.java:153][Resultado Obtener Beneficiario Cierre: 0]
+[2015Nov24 08:34:10,798][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 0]
+[2015Nov24 08:34:10,806][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:10,860][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:10,862][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2015Nov24 08:34:10,865][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2015Nov24 08:34:10,867][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2015Nov24 08:34:10,869][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2015Nov24 08:34:10,871][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2015Nov24 08:34:10,873][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2015Nov24 08:34:10,874][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2015Nov24 08:34:10,876][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2015Nov24 08:34:10,878][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:11,340][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:11,342][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:11.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>582123163282</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:13,753][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 582123163282 - ve.com.digitel.bssint.ReturnValue{ | condCode: 4006 | reasonCode: Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [582123163282] at refDateTime [2015-11-24T08:34:13.233-04:30] in the database. caused by No entity found for query | info:  | vto: {}}]
+[2015Nov24 08:34:13,755][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:13,764][DEBUG][1448370222609_M05][init CrearNotaBatchDebitoDelegator.java:89][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov24 08:34:13,864][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:13,912][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:13,986][ERROR][1448370222609_M05][procesarCierre RC.java:498][Error consultando el gsm: 582123163282 en RTBS. Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [582123163282] at refDateTime [2015-11-24T08:34:13.233-04:30] in the database. caused by No entity found for query]
+[2015Nov24 08:34:13,994][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 1]
+[2015Nov24 08:34:14,001][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:14,004][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:14,005][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:14.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>582123163284</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:18,780][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 582123163284 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Fijo_Control_Super, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:34:18,782][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:34:18,790][DEBUG][1448370222609_M05][init ValidarPlanTelefoniaDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:34:18,815][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:18,842][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:34:18,849][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:34:18,862][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>${username}</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>${date}</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>${suscriberID}</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>${rechComm}</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:18,864][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>]
+[2015Nov24 08:34:18,866][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2015Nov24 08:34:18,868][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2015Nov24 08:34:18,870][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2015Nov24 08:34:18,871][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>]
+[2015Nov24 08:34:18,873][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2015Nov24 08:34:18,875][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>]
+[2015Nov24 08:34:18,877][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2015Nov24 08:34:18,878][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>]
+[2015Nov24 08:34:18,880][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: rechComm]
+[2015Nov24 08:34:18,881][DEBUG][1448370222609_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:18,885][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:18,887][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:34:18.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>582123163284</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:21,230][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 582123163284]
+[2015Nov24 08:34:21,232][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:21,255][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:21,288][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:21,424][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 2]
+[2015Nov24 08:34:21,431][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:21,434][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:21,436][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:21.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>582953114707</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:26,272][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 582953114707 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Fijo_Control_Plus, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:34:26,274][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:34:26,297][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:26,322][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:34:26,330][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:34:26,332][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:26,333][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:34:26.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>582953114707</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:28,656][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 582953114707]
+[2015Nov24 08:34:28,657][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:28,679][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:28,711][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:28,801][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 3]
+[2015Nov24 08:34:28,808][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:28,810][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:28,811][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:28.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584120776086</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:34,974][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584120776086 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Premium_Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:34:34,976][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:34:34,999][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:35,026][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:34:35,034][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:34:35,036][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:35,038][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:34:35.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584120776086</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:36,734][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584120776086]
+[2015Nov24 08:34:36,735][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:36,758][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:36,790][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:36,888][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 4]
+[2015Nov24 08:34:36,895][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:36,897][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:36,898][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:36.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584121923715</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:46,112][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584121923715 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Platinum_Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:34:46,113][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:34:46,204][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:46,516][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:34:46,523][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:34:46,526][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:46,527][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:34:46.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584121923715</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:50,629][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584121923715]
+[2015Nov24 08:34:50,631][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:50,653][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:50,685][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:50,798][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 5]
+[2015Nov24 08:34:50,805][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:50,807][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:50,808][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:50.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584122107271</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:55,571][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584122107271 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Plus_Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:34:55,572][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:34:55,594][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:55,621][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:34:55,628][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:34:55,630][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:55,631][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:34:55.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584122107271</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:34:56,902][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584122107271]
+[2015Nov24 08:34:56,903][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:34:56,925][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:34:56,957][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:34:57,055][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 6]
+[2015Nov24 08:34:57,063][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:34:57,065][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:34:57,066][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:34:57.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584122107275</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:05,249][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584122107275 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Super_Pegado_100, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:35:05,250][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:35:05,275][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:05,303][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:35:05,310][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:05,333][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:05,370][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:05,473][ERROR][1448370222609_M05][procesarCierre RC.java:471][El GSM:  no posee algunos de los productos CE. Plan: T_LPR_Super_Pegado_100]
+[2015Nov24 08:35:05,481][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 7]
+[2015Nov24 08:35:05,488][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:05,490][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:05,491][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:05.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584123170054</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:09,515][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584123170054 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=T_LPR_Plus_Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:35:09,516][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:35:09,539][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:09,564][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:35:09,571][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:35:09,573][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:09,575][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:35:09.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584123170054</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:10,818][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584123170054]
+[2015Nov24 08:35:10,819][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:10,841][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:10,874][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:10,967][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 8]
+[2015Nov24 08:35:10,974][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:10,976][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:10,977][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:10.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584125953760</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:12,111][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584125953760 - ve.com.digitel.bssint.ReturnValue{ | condCode: 4006 | reasonCode: Error unknown : <ErrorCode>4006</ErrorCode><ErrorDescription>Subscriber not found</ErrorDescription> | info:  | vto: {}}]
+[2015Nov24 08:35:12,112][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:12,134][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:12,166][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:12,257][ERROR][1448370222609_M05][procesarCierre RC.java:498][Error consultando el gsm: 584125953760 en RTBS. Error unknown : <ErrorCode>4006</ErrorCode><ErrorDescription>Subscriber not found</ErrorDescription>]
+[2015Nov24 08:35:12,264][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 9]
+[2015Nov24 08:35:12,271][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:12,275][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:12,276][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:12.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584125953770</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:13,300][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584125953770 - ve.com.digitel.bssint.ReturnValue{ | condCode: 4006 | reasonCode: Error unknown : <ErrorCode>4006</ErrorCode><ErrorDescription>Subscriber not found</ErrorDescription> | info:  | vto: {}}]
+[2015Nov24 08:35:13,301][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:13,323][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:13,355][INFO ][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:13,436][ERROR][1448370222609_M05][procesarCierre RC.java:498][Error consultando el gsm: 584125953770 en RTBS. Error unknown : <ErrorCode>4006</ErrorCode><ErrorDescription>Subscriber not found</ErrorDescription>]
+[2015Nov24 08:35:13,443][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 10]
+[2015Nov24 08:35:13,450][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:13,452][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:13,453][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:13.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584125967896</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:14,486][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584125967896 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Plus Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:35:14,487][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:35:14,509][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:14,534][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:35:14,540][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:35:14,542][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:14,543][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:35:14.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584125967896</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:15,335][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584125967896]
+[2015Nov24 08:35:15,336][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:15,359][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:15,376][ERROR][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:154][Error ocurrido en el delegador CrearNotaBatchDebitoDelegator]
+java.lang.NullPointerException
+	at ve.com.digitel.controlemp.delegator.CrearNotaBatchDebitoDelegator.execute(CrearNotaBatchDebitoDelegator.java:139)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcCrearNotaBatchDebito(RCHelper.java:260)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:425)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+[2015Nov24 08:35:15,388][ERROR][1448370222609_M05][procesarCierre RC.java:427][GSM:  no recargado. Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [584125967896] at refDateTime [2015-11-24T08:35:15.182-04:30] in the database. caused by No entity found for query]
+[2015Nov24 08:35:15,395][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 11]
+[2015Nov24 08:35:15,401][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:15,403][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:15,404][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:15.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584127083030</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:16,422][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584127083030 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Plus Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:35:16,423][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:35:16,445][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:16,468][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:35:16,475][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:35:16,477][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:16,478][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:35:16.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584127083030</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:17,290][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584127083030]
+[2015Nov24 08:35:17,291][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:17,313][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:17,327][ERROR][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:154][Error ocurrido en el delegador CrearNotaBatchDebitoDelegator]
+java.lang.NullPointerException
+	at ve.com.digitel.controlemp.delegator.CrearNotaBatchDebitoDelegator.execute(CrearNotaBatchDebitoDelegator.java:139)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcCrearNotaBatchDebito(RCHelper.java:260)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:425)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+[2015Nov24 08:35:17,336][ERROR][1448370222609_M05][procesarCierre RC.java:427][GSM:  no recargado. Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [584127083030] at refDateTime [2015-11-24T08:35:17.144-04:30] in the database. caused by No entity found for query]
+[2015Nov24 08:35:17,343][DEBUG][1448370222609_M05][procesarCierre RC.java:382][CONTADOR GSM: 12]
+[2015Nov24 08:35:17,349][DEBUG][1448370222609_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov24 08:35:17,351][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:17,352][DEBUG][1448370222609_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-24T08:35:17.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584127083032</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:18,365][DEBUG][1448370222609_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584127083032 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Plus Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2015Nov24 08:35:18,366][DEBUG][1448370222609_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2015Nov24 08:35:18,388][DEBUG][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:18,411][INFO ][1448370222609_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov24 08:35:18,418][DEBUG][1448370222609_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2015Nov24 08:35:18,420][DEBUG][1448370222609_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov24 08:35:18,421][DEBUG][1448370222609_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2015-11-24T08:35:18.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584127083032</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>6{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov24 08:35:19,218][INFO ][1448370222609_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584127083032]
+[2015Nov24 08:35:19,219][DEBUG][1448370222609_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov24 08:35:19,241][DEBUG][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:19,254][ERROR][1448370222609_M05][execute CrearNotaBatchDebitoDelegator.java:154][Error ocurrido en el delegador CrearNotaBatchDebitoDelegator]
+java.lang.NullPointerException
+	at ve.com.digitel.controlemp.delegator.CrearNotaBatchDebitoDelegator.execute(CrearNotaBatchDebitoDelegator.java:139)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcCrearNotaBatchDebito(RCHelper.java:260)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:425)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+[2015Nov24 08:35:19,263][ERROR][1448370222609_M05][procesarCierre RC.java:427][GSM:  no recargado. Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [584127083032] at refDateTime [2015-11-24T08:35:19.073-04:30] in the database. caused by No entity found for query]
+[2015Nov24 08:35:19,278][DEBUG][1448370222609_M05][executeProcObtenerMontosCargo RCHelper.java:275][RCHelper executeProcObtenerMontosCargo]
+[2015Nov24 08:35:19,285][DEBUG][1448370222609_M05][init ObtenerMontosCargosDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:35:19,307][DEBUG][1448370222609_M05][execute ObtenerMontosCargosDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:19,555][INFO ][1448370222609_M05][execute ObtenerMontosCargosDelegator.java:147][Resultado Obtener Montos Cargos: 0]
+[2015Nov24 08:35:19,919][INFO ][1448370222609_M05][procesarCierre RC.java:544][INICIANDO cobro en Kenan]
+[2015Nov24 08:35:19,926][DEBUG][1448370222609_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2015Nov24 08:35:19,949][DEBUG][1448370222609_M05][init AgregarNRCDelegator.java:93][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov24 08:35:19,972][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:20,003][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Noviembre 2015]
+[2015Nov24 08:35:20,006][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2015-11-04]
+[2015Nov24 08:35:20,007][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 121]
+[2015Nov24 08:35:20,008][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12018912]
+[2015Nov24 08:35:20,009][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:170][montoCargado: 36100]
+[2015Nov24 08:35:20,154][INFO ][1448370222609_M05][execute AgregarNRCDelegator.java:178][Resultado agregar NRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.agreganrc(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:20,161][DEBUG][1448370222609_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov24 08:35:20,169][DEBUG][1448370222609_M05][init ActualizarNotaDebitoDelegator.java:89][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov24 08:35:20,197][DEBUG][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:22,913][INFO ][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:23,006][DEBUG][1448370222609_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2015Nov24 08:35:23,028][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:23,050][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Noviembre 2015]
+[2015Nov24 08:35:23,072][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2015-11-04]
+[2015Nov24 08:35:23,075][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 123]
+[2015Nov24 08:35:23,078][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12018912]
+[2015Nov24 08:35:23,080][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:170][montoCargado: 62050]
+[2015Nov24 08:35:23,120][INFO ][1448370222609_M05][execute AgregarNRCDelegator.java:178][Resultado agregar NRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.agreganrc(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:23,127][DEBUG][1448370222609_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov24 08:35:23,209][DEBUG][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:26,185][INFO ][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:26,310][DEBUG][1448370222609_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2015Nov24 08:35:26,331][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:26,353][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Noviembre 2015]
+[2015Nov24 08:35:26,356][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2015-11-04]
+[2015Nov24 08:35:26,357][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 124]
+[2015Nov24 08:35:26,358][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12018912]
+[2015Nov24 08:35:26,359][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:170][montoCargado: 31025]
+[2015Nov24 08:35:26,392][INFO ][1448370222609_M05][execute AgregarNRCDelegator.java:178][Resultado agregar NRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.agreganrc(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:26,399][DEBUG][1448370222609_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov24 08:35:26,420][DEBUG][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:29,136][INFO ][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:29,244][DEBUG][1448370222609_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2015Nov24 08:35:29,266][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:29,288][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Noviembre 2015]
+[2015Nov24 08:35:29,291][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2015-11-04]
+[2015Nov24 08:35:29,292][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 125]
+[2015Nov24 08:35:29,293][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12018912]
+[2015Nov24 08:35:29,294][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:170][montoCargado: 28300]
+[2015Nov24 08:35:29,311][INFO ][1448370222609_M05][execute AgregarNRCDelegator.java:178][Resultado agregar NRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.agreganrc(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:29,318][DEBUG][1448370222609_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov24 08:35:29,339][DEBUG][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:32,052][INFO ][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:32,159][DEBUG][1448370222609_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2015Nov24 08:35:32,181][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:32,203][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Noviembre 2015]
+[2015Nov24 08:35:32,206][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2015-11-04]
+[2015Nov24 08:35:32,207][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 126]
+[2015Nov24 08:35:32,208][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12018912]
+[2015Nov24 08:35:32,209][DEBUG][1448370222609_M05][execute AgregarNRCDelegator.java:170][montoCargado: 98750]
+[2015Nov24 08:35:32,236][INFO ][1448370222609_M05][execute AgregarNRCDelegator.java:178][Resultado agregar NRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.agreganrc(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:32,243][DEBUG][1448370222609_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov24 08:35:32,263][DEBUG][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:34,974][INFO ][1448370222609_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:35,079][DEBUG][1448370222609_M05][executeProcCerrarContrato RCHelper.java:309][RCHelper executeProcCerrarContrato]
+[2015Nov24 08:35:35,087][DEBUG][1448370222609_M05][init CerrarContratoDelegator.java:84][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov24 08:35:35,111][DEBUG][1448370222609_M05][execute CerrarContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov24 08:35:37,435][INFO ][1448370222609_M05][execute CerrarContratoDelegator.java:137][Resultado CerrarContrato Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}} - 197]
+[2015Nov24 08:35:37,530][INFO ][1448370222609_M05][procesarCierre RC.java:621][Cierre de Contratos: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:37,541][INFO ][1448370222609_M05][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:37,542][INFO ][1448370222609_M05][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov24 08:35:37,542][INFO ][1448370222609_M05][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov24 08:35:37,544][DEBUG][1448370222609_M05][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2015Nov24 08:36:13,040][ERROR][1448370222609_M05][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)

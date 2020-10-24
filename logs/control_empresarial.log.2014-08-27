@@ -1,0 +1,891 @@
+[2014Aug27 10:49:52,959][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2014Aug27 10:49:52,994][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2014Aug27 10:49:53,075][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2014Aug27 10:49:53,079][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2014Aug27 10:49:53,082][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2014Aug27 10:49:53,086][INFO ][][main RC.java:737][args[1] = M03]
+[2014Aug27 10:49:53,090][INFO ][1409152793090_M03][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 10:49:53,107][DEBUG][1409152793090_M03][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2014Aug27 10:49:53,136][DEBUG][1409152793090_M03][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:02,655][DEBUG][1409152793090_M03][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:07,674][INFO ][1409152793090_M03][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7713757}}]
+[2014Aug27 10:50:07,883][INFO ][1409152793090_M03][procesarPreCierre RC.java:124][Id de proceso generado: 7713757]
+[2014Aug27 10:50:07,885][DEBUG][1409152793090_M03][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2014Aug27 10:50:07,908][DEBUG][1409152793090_M03][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:07,998][DEBUG][1409152793090_M03][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:11,168][INFO ][1409152793090_M03][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 10:50:11,706][INFO ][1409152793090_M03][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2014Aug27 10:50:11,803][DEBUG][1409152793090_M03][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2014Aug27 10:50:11,826][INFO ][1409152793090_M03][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2014Aug27 10:50:11,829][DEBUG][1409152793090_M03][executeProcIsDirectNRC RCHelper.java:325][RCHelper executeProcIsDirectNRC]
+[2014Aug27 10:50:11,855][DEBUG][1409152793090_M03][init IsDirectNRCDelegator.java:86][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 10:50:12,087][DEBUG][1409152793090_M03][execute IsDirectNRCDelegator.java:127][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:12,188][INFO ][1409152793090_M03][execute IsDirectNRCDelegator.java:145][Resultado IsRedirectNRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.isredirectnrc(?, ?) ejecutado con exito | info:  | vto: {isRedirect=0}}]
+[2014Aug27 10:50:12,196][DEBUG][1409152793090_M03][validarRedirectCuenta RCHelper.java:379][RCHelper validarRedirectCuenta]
+[2014Aug27 10:50:12,198][INFO ][1409152793090_M03][validarRedirectCuenta KenanDelegator.java:125][La funcion RedirectStatus fue FALSO ]
+[2014Aug27 10:50:12,200][DEBUG][1409152793090_M03][executeValidarCuentaSIR RCHelper.java:397][RCHelper executeValidarCuentaSIR]
+[2014Aug27 10:50:12,236][DEBUG][1409152793090_M03][init ListaNegraDelegator.java:87][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 10:50:12,312][DEBUG][1409152793090_M03][execute ListaNegraDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:14,916][INFO ][1409152793090_M03][execute ListaNegraDelegator.java:148][Resultado Validar Cuenta SIR: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta SIR ejecutado con exito | info:  | vto: {existe=N}}]
+[2014Aug27 10:50:14,993][DEBUG][1409152793090_M03][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2014Aug27 10:50:15,003][DEBUG][1409152793090_M03][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:15,145][DEBUG][1409152793090_M03][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:15,524][INFO ][1409152793090_M03][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 10:50:15,624][INFO ][1409152793090_M03][procesarPreCierre RC.java:174][La Cuenta: 12344020 ha sido actualizada con status Parcialmente Ejecutado]
+[2014Aug27 10:50:15,626][DEBUG][1409152793090_M03][executeValidarEstatus RCHelper.java:366][RCHelper executeValidarEstatus]
+[2014Aug27 10:50:15,627][DEBUG][1409152793090_M03][executeProcObtenerBeneficiario RCHelper.java:122][RCHelper executeProcobtenerBeneficiario]
+[2014Aug27 10:50:15,635][DEBUG][1409152793090_M03][init ObtenerBeneficiarioDelegator.java:89][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:15,689][DEBUG][1409152793090_M03][execute ObtenerBeneficiarioDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:15,788][INFO ][1409152793090_M03][execute ObtenerBeneficiarioDelegator.java:151][Resultado Obtener Beneficiario: Procedure: PROCESO_PKG.obtenerBeneficiary(?, ?, ?, ?) ejecutado con exito]
+[2014Aug27 10:50:16,235][INFO ][1409152793090_M03][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2014Aug27 10:50:16,244][DEBUG][1409152793090_M03][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2014Aug27 10:50:16,258][DEBUG][1409152793090_M03][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2014Aug27 10:50:16,307][DEBUG][1409152793090_M03][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:16,560][INFO ][1409152793090_M03][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan Mega Plus Control={descripcionProducto=Plan Mega Plus Control, idProducto=1619, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00147}, Plan Mega Control={descripcionProducto=Plan Mega Control, idProducto=1617, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00145}, Plan Platinum Control ZF={descripcionProducto=Plan Platinum Control ZF, idProducto=2104, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00096}, Plan Super Control={descripcionProducto=Plan Super Control, idProducto=4, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00064}, Plan Premium Control={descripcionProducto=Plan Premium Control, idProducto=2101, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00093}, Plan Fijo Control Super={descripcionProducto=Plan Fijo Control Super, idProducto=41, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00015}, Plan Mega Control ZF={descripcionProducto=Plan Mega Control ZF, idProducto=1618, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00146}, Plan Fijo Control Plus ZF={descripcionProducto=Plan Fijo Control Plus ZF, idProducto=44, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00018}, Plan Fijo Control Super ZF={descripcionProducto=Plan Fijo Control Super ZF, idProducto=42, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00016}, Plan Mega Plus Control ZF={descripcionProducto=Plan Mega Plus Control ZF, idProducto=1620, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00148}, Plan Super Control ZF={descripcionProducto=Plan Super Control ZF, idProducto=27, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00065}, Plan Plus Control={descripcionProducto=Plan Plus Control, idProducto=31, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00066}, Plan Platinum Control={descripcionProducto=Plan Platinum Control, idProducto=2103, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00095}, Plan Microempresa Control ZF={descripcionProducto=Plan Microempresa Control ZF, idProducto=3, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00063}, Plan Microempresa Control={descripcionProducto=Plan Microempresa Control, idProducto=23, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00062}, Plan Plus Control ZF={descripcionProducto=Plan Plus Control ZF, idProducto=32, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00067}, Plan Premium Control ZF={descripcionProducto=Plan Premium Control ZF, idProducto=2102, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00094}, Plan Fijo Control Plus={descripcionProducto=Plan Fijo Control Plus, idProducto=43, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00017}}}]
+[2014Aug27 10:50:16,570][DEBUG][1409152793090_M03][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2014Aug27 10:50:16,578][DEBUG][1409152793090_M03][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2014Aug27 10:50:16,631][DEBUG][1409152793090_M03][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:16,713][INFO ][1409152793090_M03][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2014Aug27 10:50:17,108][INFO ][1409152793090_M03][procesarCierre RC.java:357][Inicio de procesamiento de contratos por CERRAR]
+[2014Aug27 10:50:17,113][INFO ][1409152793090_M03][procesarCierre RC.java:362][Inicio de procesamiento de contrato: 8393]
+[2014Aug27 10:50:17,114][DEBUG][1409152793090_M03][executeProcCrearBatchDebito RCHelper.java:176][RCHelper executeProcCrearBatchDebito]
+[2014Aug27 10:50:17,123][DEBUG][1409152793090_M03][init CrearBatchDebitoDelegator.java:85][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 10:50:17,163][DEBUG][1409152793090_M03][execute CrearBatchDebitoDelegator.java:126][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:17,209][DEBUG][1409152793090_M03][execute CrearBatchDebitoDelegator.java:140][Detalle de proceso generado. IdBatchDebito: 14687039]
+[2014Aug27 10:50:17,211][INFO ][1409152793090_M03][execute CrearBatchDebitoDelegator.java:148][Resultado Crear Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearBatchDebito(?, ?, ?) ejecutado con exito | info:  | vto: {idBatchDebito=14687039}}]
+[2014Aug27 10:50:17,285][DEBUG][1409152793090_M03][executeProcObtenerBeneficiarioCierre RCHelper.java:241][RCHelper executeObtenerBeneficiarioCierre]
+[2014Aug27 10:50:17,294][DEBUG][1409152793090_M03][init ObtenerBeneficiarioCierreDelegator.java:90][Metodo de inicializacion de contexto para ObtenerBeneficiarioCierreDelegator]
+[2014Aug27 10:50:17,336][DEBUG][1409152793090_M03][execute ObtenerBeneficiarioCierreDelegator.java:131][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:17,414][INFO ][1409152793090_M03][execute ObtenerBeneficiarioCierreDelegator.java:153][Resultado Obtener Beneficiario Cierre: 0]
+[2014Aug27 10:50:20,508][DEBUG][1409152793090_M03][executeObtenerCuentaKenanDelegator RCHelper.java:451][RCHelper executeObtenerCuentaKenanDelegator]
+[2014Aug27 10:50:20,518][DEBUG][1409152793090_M03][init ObtenerCuentaKenanDelegator.java:81][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:20,615][DEBUG][1409152793090_M03][execute ObtenerCuentaKenanDelegator.java:121][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:20,664][INFO ][1409152793090_M03][execute ObtenerCuentaKenanDelegator.java:136][Resultado Obtener Informacion de Cuenta Kenan: 0]
+[2014Aug27 10:50:20,671][INFO ][1409152793090_M03][procesarCierre RC.java:519][No existen Beneficiarios]
+[2014Aug27 10:50:20,679][DEBUG][1409152793090_M03][executeProcObtenerMontosCargo RCHelper.java:275][RCHelper executeProcObtenerMontosCargo]
+[2014Aug27 10:50:20,687][DEBUG][1409152793090_M03][init ObtenerMontosCargosDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 10:50:20,724][DEBUG][1409152793090_M03][execute ObtenerMontosCargosDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:20,782][INFO ][1409152793090_M03][execute ObtenerMontosCargosDelegator.java:147][Resultado Obtener Montos Cargos: 0]
+[2014Aug27 10:50:21,156][DEBUG][1409152793090_M03][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2014Aug27 10:50:21,170][DEBUG][1409152793090_M03][init ActualizarNotaDebitoDelegator.java:89][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2014Aug27 10:50:21,205][DEBUG][1409152793090_M03][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:21,706][INFO ][1409152793090_M03][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 10:50:21,810][DEBUG][1409152793090_M03][executeProcCerrarContrato RCHelper.java:309][RCHelper executeProcCerrarContrato]
+[2014Aug27 10:50:21,825][DEBUG][1409152793090_M03][init CerrarContratoDelegator.java:84][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2014Aug27 10:50:21,859][DEBUG][1409152793090_M03][execute CerrarContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 10:50:21,920][INFO ][1409152793090_M03][execute CerrarContratoDelegator.java:137][Resultado CerrarContrato Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}} - 8393]
+[2014Aug27 10:50:22,005][INFO ][1409152793090_M03][procesarCierre RC.java:621][Cierre de Contratos: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 10:50:22,015][INFO ][1409152793090_M03][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 10:50:22,017][INFO ][1409152793090_M03][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 10:50:22,018][INFO ][1409152793090_M03][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 10:50:22,020][DEBUG][1409152793090_M03][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2014Aug27 10:50:57,508][ERROR][1409152793090_M03][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)
+[2014Aug27 17:05:04,825][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2014Aug27 17:05:04,880][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2014Aug27 17:05:04,933][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2014Aug27 17:05:04,937][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2014Aug27 17:05:04,940][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2014Aug27 17:05:04,943][INFO ][][main RC.java:737][args[1] = M03]
+[2014Aug27 17:05:04,947][INFO ][1409175304947_M03][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 17:05:04,963][DEBUG][1409175304947_M03][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2014Aug27 17:05:05,032][DEBUG][1409175304947_M03][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:05:16,631][DEBUG][1409175304947_M03][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:05:23,057][INFO ][1409175304947_M03][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7714837}}]
+[2014Aug27 17:05:23,257][INFO ][1409175304947_M03][procesarPreCierre RC.java:124][Id de proceso generado: 7714837]
+[2014Aug27 17:05:23,259][DEBUG][1409175304947_M03][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2014Aug27 17:05:23,281][DEBUG][1409175304947_M03][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:05:23,371][DEBUG][1409175304947_M03][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:05:26,772][INFO ][1409175304947_M03][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 17:05:26,817][INFO ][1409175304947_M03][procesarPreCierre RC.java:272][No existen cuentas por PRE-CERRAR]
+[2014Aug27 17:05:26,820][INFO ][1409175304947_M03][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerContratosPorPreCerrar(?, ?, ?) ejecutado con exito | info:  | vto: {conn=weblogic.jdbc.rmi.SerialConnection_weblogic_jdbc_rmi_internal_ConnectionImpl_weblogic_jdbc_wrapper_JTAConnection_weblogic_jdbc_wrapper_XAConnection_oracle_jdbc_driver_LogicalConnection_814_WLStub@6, cursor=weblogic.jdbc.rmi.SerialResultSet_weblogic_jdbc_rmi_internal_ResultSetStub_weblogic_jdbc_rmi_internal_ResultSetImpl_weblogic_jdbc_wrapper_ResultSet_oracle_jdbc_driver_OracleResultSetImpl_814_WLStub@c, cs=weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub@9}}]
+[2014Aug27 17:05:26,832][DEBUG][1409175304947_M03][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2014Aug27 17:05:26,873][DEBUG][1409175304947_M03][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2014Aug27 17:05:27,129][DEBUG][1409175304947_M03][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:05:27,675][INFO ][1409175304947_M03][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan Mega Plus Control={descripcionProducto=Plan Mega Plus Control, idProducto=1619, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00147}, Plan Mega Control={descripcionProducto=Plan Mega Control, idProducto=1617, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00145}, Plan Platinum Control ZF={descripcionProducto=Plan Platinum Control ZF, idProducto=2104, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00096}, Plan Super Control={descripcionProducto=Plan Super Control, idProducto=4, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00064}, Plan Premium Control={descripcionProducto=Plan Premium Control, idProducto=2101, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00093}, Plan Fijo Control Super={descripcionProducto=Plan Fijo Control Super, idProducto=41, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00015}, Plan Mega Control ZF={descripcionProducto=Plan Mega Control ZF, idProducto=1618, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00146}, Plan Fijo Control Plus ZF={descripcionProducto=Plan Fijo Control Plus ZF, idProducto=44, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00018}, Plan Fijo Control Super ZF={descripcionProducto=Plan Fijo Control Super ZF, idProducto=42, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00016}, Plan Mega Plus Control ZF={descripcionProducto=Plan Mega Plus Control ZF, idProducto=1620, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00148}, Plan Super Control ZF={descripcionProducto=Plan Super Control ZF, idProducto=27, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00065}, Plan Plus Control={descripcionProducto=Plan Plus Control, idProducto=31, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00066}, Plan Platinum Control={descripcionProducto=Plan Platinum Control, idProducto=2103, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00095}, Plan Microempresa Control ZF={descripcionProducto=Plan Microempresa Control ZF, idProducto=3, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00063}, Plan Microempresa Control={descripcionProducto=Plan Microempresa Control, idProducto=23, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00062}, Plan Plus Control ZF={descripcionProducto=Plan Plus Control ZF, idProducto=32, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00067}, Plan Premium Control ZF={descripcionProducto=Plan Premium Control ZF, idProducto=2102, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00094}, Plan Fijo Control Plus={descripcionProducto=Plan Fijo Control Plus, idProducto=43, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00017}}}]
+[2014Aug27 17:05:27,689][DEBUG][1409175304947_M03][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2014Aug27 17:05:27,699][DEBUG][1409175304947_M03][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2014Aug27 17:05:27,787][DEBUG][1409175304947_M03][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:05:27,941][INFO ][1409175304947_M03][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2014Aug27 17:05:28,114][INFO ][1409175304947_M03][procesarCierre RC.java:625][No existen Procesos por CERRAR]
+[2014Aug27 17:05:28,124][INFO ][1409175304947_M03][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 200 | reasonCode: No existen Procesos por CERRAR | info:  | vto: {}}]
+[2014Aug27 17:05:28,125][INFO ][1409175304947_M03][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 17:05:28,127][INFO ][1409175304947_M03][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 200 | reasonCode: No existen Procesos por CERRAR | info:  | vto: {}}]
+[2014Aug27 17:05:28,129][DEBUG][1409175304947_M03][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2014Aug27 17:06:03,588][ERROR][1409175304947_M03][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)
+[2014Aug27 17:06:09,609][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2014Aug27 17:06:09,631][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2014Aug27 17:06:09,682][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2014Aug27 17:06:09,686][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2014Aug27 17:06:09,689][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2014Aug27 17:06:09,692][INFO ][][main RC.java:737][args[1] = M05]
+[2014Aug27 17:06:09,696][INFO ][1409175369696_M05][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 17:06:09,711][DEBUG][1409175369696_M05][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2014Aug27 17:06:09,727][DEBUG][1409175369696_M05][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:15,829][DEBUG][1409175369696_M05][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:18,807][INFO ][1409175369696_M05][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7715107}}]
+[2014Aug27 17:06:18,902][INFO ][1409175369696_M05][procesarPreCierre RC.java:124][Id de proceso generado: 7715107]
+[2014Aug27 17:06:18,904][DEBUG][1409175369696_M05][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2014Aug27 17:06:18,913][DEBUG][1409175369696_M05][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:19,003][DEBUG][1409175369696_M05][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:21,176][INFO ][1409175369696_M05][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 17:06:21,942][INFO ][1409175369696_M05][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2014Aug27 17:06:22,040][DEBUG][1409175369696_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2014Aug27 17:06:22,062][INFO ][1409175369696_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2014Aug27 17:06:22,065][DEBUG][1409175369696_M05][executeProcIsDirectNRC RCHelper.java:325][RCHelper executeProcIsDirectNRC]
+[2014Aug27 17:06:22,096][DEBUG][1409175369696_M05][init IsDirectNRCDelegator.java:86][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 17:06:22,290][DEBUG][1409175369696_M05][execute IsDirectNRCDelegator.java:127][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:22,400][INFO ][1409175369696_M05][execute IsDirectNRCDelegator.java:145][Resultado IsRedirectNRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.isredirectnrc(?, ?) ejecutado con exito | info:  | vto: {isRedirect=0}}]
+[2014Aug27 17:06:22,408][DEBUG][1409175369696_M05][validarRedirectCuenta RCHelper.java:379][RCHelper validarRedirectCuenta]
+[2014Aug27 17:06:22,409][INFO ][1409175369696_M05][validarRedirectCuenta KenanDelegator.java:125][La funcion RedirectStatus fue FALSO ]
+[2014Aug27 17:06:22,411][DEBUG][1409175369696_M05][executeValidarCuentaSIR RCHelper.java:397][RCHelper executeValidarCuentaSIR]
+[2014Aug27 17:06:22,437][DEBUG][1409175369696_M05][init ListaNegraDelegator.java:87][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 17:06:22,522][DEBUG][1409175369696_M05][execute ListaNegraDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:25,001][INFO ][1409175369696_M05][execute ListaNegraDelegator.java:148][Resultado Validar Cuenta SIR: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta SIR ejecutado con exito | info:  | vto: {existe=N}}]
+[2014Aug27 17:06:25,094][DEBUG][1409175369696_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2014Aug27 17:06:25,103][DEBUG][1409175369696_M05][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:25,243][DEBUG][1409175369696_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:25,616][INFO ][1409175369696_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:25,684][INFO ][1409175369696_M05][procesarPreCierre RC.java:174][La Cuenta: 12344314 ha sido actualizada con status Parcialmente Ejecutado]
+[2014Aug27 17:06:25,685][DEBUG][1409175369696_M05][executeValidarEstatus RCHelper.java:366][RCHelper executeValidarEstatus]
+[2014Aug27 17:06:25,687][DEBUG][1409175369696_M05][executeProcObtenerBeneficiario RCHelper.java:122][RCHelper executeProcobtenerBeneficiario]
+[2014Aug27 17:06:25,695][DEBUG][1409175369696_M05][init ObtenerBeneficiarioDelegator.java:89][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:25,748][DEBUG][1409175369696_M05][execute ObtenerBeneficiarioDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:25,857][INFO ][1409175369696_M05][execute ObtenerBeneficiarioDelegator.java:151][Resultado Obtener Beneficiario: Procedure: PROCESO_PKG.obtenerBeneficiary(?, ?, ?, ?) ejecutado con exito]
+[2014Aug27 17:06:26,297][DEBUG][1409175369696_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2014Aug27 17:06:26,310][DEBUG][1409175369696_M05][init CrearDetalleProcesoDelegator.java:90][Metodo de inicializacion de contexto para CrearDetalleProcesoDelegator]
+[2014Aug27 17:06:26,444][DEBUG][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:26,506][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165678101 para el GSM: 584121892078]
+[2014Aug27 17:06:26,508][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165678101}}]
+[2014Aug27 17:06:26,588][DEBUG][1409175369696_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2014Aug27 17:06:26,634][DEBUG][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:26,699][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165678371 para el GSM: 584121892079]
+[2014Aug27 17:06:26,701][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165678371}}]
+[2014Aug27 17:06:26,780][DEBUG][1409175369696_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2014Aug27 17:06:26,818][DEBUG][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:26,865][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165678641 para el GSM: 584121892080]
+[2014Aug27 17:06:26,866][INFO ][1409175369696_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165678641}}]
+[2014Aug27 17:06:26,945][INFO ][1409175369696_M05][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2014Aug27 17:06:26,954][DEBUG][1409175369696_M05][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2014Aug27 17:06:26,963][DEBUG][1409175369696_M05][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2014Aug27 17:06:27,001][DEBUG][1409175369696_M05][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:27,223][INFO ][1409175369696_M05][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan Mega Plus Control={descripcionProducto=Plan Mega Plus Control, idProducto=1619, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00147}, Plan Mega Control={descripcionProducto=Plan Mega Control, idProducto=1617, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00145}, Plan Platinum Control ZF={descripcionProducto=Plan Platinum Control ZF, idProducto=2104, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00096}, Plan Super Control={descripcionProducto=Plan Super Control, idProducto=4, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00064}, Plan Premium Control={descripcionProducto=Plan Premium Control, idProducto=2101, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00093}, Plan Fijo Control Super={descripcionProducto=Plan Fijo Control Super, idProducto=41, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00015}, Plan Mega Control ZF={descripcionProducto=Plan Mega Control ZF, idProducto=1618, costoVigenteProducto=45000, nombreProducto=MOV-MAS-PRE-PLAN-00146}, Plan Fijo Control Plus ZF={descripcionProducto=Plan Fijo Control Plus ZF, idProducto=44, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00018}, Plan Fijo Control Super ZF={descripcionProducto=Plan Fijo Control Super ZF, idProducto=42, costoVigenteProducto=46000, nombreProducto=BAS-MAS-PRE-PLAN-00016}, Plan Mega Plus Control ZF={descripcionProducto=Plan Mega Plus Control ZF, idProducto=1620, costoVigenteProducto=68000, nombreProducto=MOV-MAS-PRE-PLAN-00148}, Plan Super Control ZF={descripcionProducto=Plan Super Control ZF, idProducto=27, costoVigenteProducto=23125, nombreProducto=MOV-MAS-PRE-PLAN-00065}, Plan Plus Control={descripcionProducto=Plan Plus Control, idProducto=31, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00066}, Plan Platinum Control={descripcionProducto=Plan Platinum Control, idProducto=2103, costoVigenteProducto=32678, nombreProducto=MOV-MAS-PRE-PLAN-00095}, Plan Microempresa Control ZF={descripcionProducto=Plan Microempresa Control ZF, idProducto=3, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00063}, Plan Microempresa Control={descripcionProducto=Plan Microempresa Control, idProducto=23, costoVigenteProducto=6696, nombreProducto=MOV-MAS-PRE-PLAN-00062}, Plan Plus Control ZF={descripcionProducto=Plan Plus Control ZF, idProducto=32, costoVigenteProducto=13393, nombreProducto=MOV-MAS-PRE-PLAN-00067}, Plan Premium Control ZF={descripcionProducto=Plan Premium Control ZF, idProducto=2102, costoVigenteProducto=20982, nombreProducto=MOV-MAS-PRE-PLAN-00094}, Plan Fijo Control Plus={descripcionProducto=Plan Fijo Control Plus, idProducto=43, costoVigenteProducto=23000, nombreProducto=BAS-MAS-PRE-PLAN-00017}}}]
+[2014Aug27 17:06:27,233][DEBUG][1409175369696_M05][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2014Aug27 17:06:27,240][DEBUG][1409175369696_M05][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2014Aug27 17:06:27,294][DEBUG][1409175369696_M05][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:27,358][INFO ][1409175369696_M05][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2014Aug27 17:06:27,393][INFO ][1409175369696_M05][procesarCierre RC.java:357][Inicio de procesamiento de contratos por CERRAR]
+[2014Aug27 17:06:27,398][INFO ][1409175369696_M05][procesarCierre RC.java:362][Inicio de procesamiento de contrato: 8396]
+[2014Aug27 17:06:27,399][DEBUG][1409175369696_M05][executeProcCrearBatchDebito RCHelper.java:176][RCHelper executeProcCrearBatchDebito]
+[2014Aug27 17:06:27,408][DEBUG][1409175369696_M05][init CrearBatchDebitoDelegator.java:85][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 17:06:27,446][DEBUG][1409175369696_M05][execute CrearBatchDebitoDelegator.java:126][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:27,490][DEBUG][1409175369696_M05][execute CrearBatchDebitoDelegator.java:140][Detalle de proceso generado. IdBatchDebito: 14688119]
+[2014Aug27 17:06:27,492][INFO ][1409175369696_M05][execute CrearBatchDebitoDelegator.java:148][Resultado Crear Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearBatchDebito(?, ?, ?) ejecutado con exito | info:  | vto: {idBatchDebito=14688119}}]
+[2014Aug27 17:06:27,605][DEBUG][1409175369696_M05][executeProcObtenerBeneficiarioCierre RCHelper.java:241][RCHelper executeObtenerBeneficiarioCierre]
+[2014Aug27 17:06:27,614][DEBUG][1409175369696_M05][init ObtenerBeneficiarioCierreDelegator.java:90][Metodo de inicializacion de contexto para ObtenerBeneficiarioCierreDelegator]
+[2014Aug27 17:06:27,651][DEBUG][1409175369696_M05][execute ObtenerBeneficiarioCierreDelegator.java:131][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:27,727][INFO ][1409175369696_M05][execute ObtenerBeneficiarioCierreDelegator.java:153][Resultado Obtener Beneficiario Cierre: 0]
+[2014Aug27 17:06:31,920][DEBUG][1409175369696_M05][procesarCierre RC.java:382][CONTADOR GSM: 0]
+[2014Aug27 17:06:31,926][DEBUG][1409175369696_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2014Aug27 17:06:31,987][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:31,990][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2014Aug27 17:06:31,993][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2014Aug27 17:06:31,995][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2014Aug27 17:06:31,996][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2014Aug27 17:06:31,998][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2014Aug27 17:06:32,000][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2014Aug27 17:06:32,002][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2014Aug27 17:06:32,004][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2014Aug27 17:06:32,006][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:32,464][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:32,466][DEBUG][1409175369696_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2014-08-27T17:06:32.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584121892078</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:33,288][DEBUG][1409175369696_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584121892078 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Microempresa Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2014Aug27 17:06:33,290][DEBUG][1409175369696_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2014Aug27 17:06:33,311][DEBUG][1409175369696_M05][init ValidarPlanTelefoniaDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:33,417][DEBUG][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:33,501][INFO ][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 17:06:33,508][DEBUG][1409175369696_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2014Aug27 17:06:33,537][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>${username}</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>${date}</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>${suscriberID}</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>${rechComm}</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:33,539][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>]
+[2014Aug27 17:06:33,541][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2014Aug27 17:06:33,543][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2014Aug27 17:06:33,545][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2014Aug27 17:06:33,547][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>]
+[2014Aug27 17:06:33,548][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2014Aug27 17:06:33,550][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>]
+[2014Aug27 17:06:33,552][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2014Aug27 17:06:33,554][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>]
+[2014Aug27 17:06:33,556][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: rechComm]
+[2014Aug27 17:06:33,557][DEBUG][1409175369696_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:33,561][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:33,563][DEBUG][1409175369696_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2014-08-27T17:06:33.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584121892078</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>3{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:33,847][INFO ][1409175369696_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584121892078]
+[2014Aug27 17:06:33,849][DEBUG][1409175369696_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2014Aug27 17:06:33,858][DEBUG][1409175369696_M05][init CrearNotaBatchDebitoDelegator.java:89][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2014Aug27 17:06:33,890][DEBUG][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:33,959][INFO ][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:34,041][DEBUG][1409175369696_M05][procesarCierre RC.java:382][CONTADOR GSM: 1]
+[2014Aug27 17:06:34,048][DEBUG][1409175369696_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2014Aug27 17:06:34,051][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:34,052][DEBUG][1409175369696_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2014-08-27T17:06:34.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584121892079</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:34,284][DEBUG][1409175369696_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584121892079 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Plus Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2014Aug27 17:06:34,286][DEBUG][1409175369696_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2014Aug27 17:06:34,324][DEBUG][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:34,351][INFO ][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 17:06:34,358][DEBUG][1409175369696_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2014Aug27 17:06:34,361][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:34,362][DEBUG][1409175369696_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2014-08-27T17:06:34.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584121892079</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>3{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:34,631][INFO ][1409175369696_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584121892079]
+[2014Aug27 17:06:34,634][DEBUG][1409175369696_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2014Aug27 17:06:34,658][DEBUG][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:34,694][INFO ][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:35,292][DEBUG][1409175369696_M05][procesarCierre RC.java:382][CONTADOR GSM: 2]
+[2014Aug27 17:06:35,298][DEBUG][1409175369696_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2014Aug27 17:06:35,301][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:35,302][DEBUG][1409175369696_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2014-08-27T17:06:35.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584121892080</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:35,504][DEBUG][1409175369696_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584121892080 - ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta a RTBS ejecuta con exito | info:  | vto: {cosName=Premium Control, currentState=Active, errorCode=, errorDescription=, nonVoucherRechargeResult=}}]
+[2014Aug27 17:06:35,506][DEBUG][1409175369696_M05][executeProcValidarPlanTelefonia RCHelper.java:224][RCHelper executeProcValidarPlan]
+[2014Aug27 17:06:35,529][DEBUG][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:124][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:35,554][INFO ][1409175369696_M05][execute ValidarPlanTelefoniaDelegator.java:142][Resultado Obtener Contratos PreCerrar: 0]
+[2014Aug27 17:06:35,560][DEBUG][1409175369696_M05][executeRechargeSubscriberRTBS RCHelper.java:413][RCHelper executeRechargeSubscriberRTBS]
+[2014Aug27 17:06:35,563][DEBUG][1409175369696_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2014Aug27 17:06:35,564][DEBUG][1409175369696_M05][buildSOAPBody NonVoucherRechargeRTBSDelegator.java:186][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws"
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security soapenv:mustUnderstand="1"
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-17709078"
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>weblogic</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+				<wsse:Nonce>WYmMF1Sz4e/LbEwfhiZxJg==</wsse:Nonce>
+				<wsu:Created>2014-08-27T17:06:35.000Z</wsu:Created>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<ccws:VersionInfoHeader>
+			<ccws:ProductVersion />
+			<ccws:CustomerVersion />
+		</ccws:VersionInfoHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<ccws:NonVoucherRecharge>
+			<ccws:subscriberId>584121892080</ccws:subscriberId>
+			<ccws:rechValue>2.1</ccws:rechValue>
+			<ccws:rechComm>3{014{14</ccws:rechComm>
+		</ccws:NonVoucherRecharge>
+	</soapenv:Body>
+</soapenv:Envelope>]
+[2014Aug27 17:06:35,793][INFO ][1409175369696_M05][execute NonVoucherRechargeRTBSDelegator.java:154][Recarga ejecuta con exito en RTBS para el gsm 584121892080]
+[2014Aug27 17:06:35,794][DEBUG][1409175369696_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2014Aug27 17:06:35,815][DEBUG][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:35,844][INFO ][1409175369696_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:35,922][DEBUG][1409175369696_M05][executeProcObtenerMontosCargo RCHelper.java:275][RCHelper executeProcObtenerMontosCargo]
+[2014Aug27 17:06:35,930][DEBUG][1409175369696_M05][init ObtenerMontosCargosDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:35,953][DEBUG][1409175369696_M05][execute ObtenerMontosCargosDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:35,989][INFO ][1409175369696_M05][execute ObtenerMontosCargosDelegator.java:147][Resultado Obtener Montos Cargos: 0]
+[2014Aug27 17:06:36,350][INFO ][1409175369696_M05][procesarCierre RC.java:544][INICIANDO cobro en Kenan]
+[2014Aug27 17:06:36,356][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:36,383][DEBUG][1409175369696_M05][init AgregarNRCDelegator.java:93][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2014Aug27 17:06:36,406][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:36,429][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:36,432][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:36,433][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 122]
+[2014Aug27 17:06:36,435][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:36,436][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 13392]
+[2014Aug27 17:06:36,719][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:551)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:36,735][ERROR][1409175369696_M05][procesarCierre RC.java:557][Error ocurrido durante la creacion del NRC. Error ocurrido en el delegador. ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+]
+[2014Aug27 17:06:36,737][INFO ][1409175369696_M05][procesarCierre RC.java:560][Cuenta Kenan: 12344314. Transcurriendo 5000 mseg para REINTENTAR la creación del NRC... ]
+[2014Aug27 17:06:41,738][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:41,760][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:41,782][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:41,785][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:41,786][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 122]
+[2014Aug27 17:06:41,788][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:41,789][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 13392]
+[2014Aug27 17:06:41,799][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:571)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:41,819][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:41,841][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:41,862][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:41,865][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:41,866][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 121]
+[2014Aug27 17:06:41,868][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:41,869][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 26786]
+[2014Aug27 17:06:41,889][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:551)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:41,900][ERROR][1409175369696_M05][procesarCierre RC.java:557][Error ocurrido durante la creacion del NRC. Error ocurrido en el delegador. ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+]
+[2014Aug27 17:06:41,902][INFO ][1409175369696_M05][procesarCierre RC.java:560][Cuenta Kenan: 12344314. Transcurriendo 5000 mseg para REINTENTAR la creación del NRC... ]
+[2014Aug27 17:06:46,903][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:46,925][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:46,945][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:46,948][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:46,949][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 121]
+[2014Aug27 17:06:46,951][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:46,952][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 26786]
+[2014Aug27 17:06:46,962][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:571)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:46,979][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:46,999][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:47,019][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:47,022][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:47,024][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 125]
+[2014Aug27 17:06:47,025][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:47,026][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 41964]
+[2014Aug27 17:06:47,037][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:551)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:47,048][ERROR][1409175369696_M05][procesarCierre RC.java:557][Error ocurrido durante la creacion del NRC. Error ocurrido en el delegador. ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+]
+[2014Aug27 17:06:47,049][INFO ][1409175369696_M05][procesarCierre RC.java:560][Cuenta Kenan: 12344314. Transcurriendo 5000 mseg para REINTENTAR la creación del NRC... ]
+[2014Aug27 17:06:52,050][DEBUG][1409175369696_M05][executeProcAgregarNRC RCHelper.java:338][RCHelper executeProcAgregarNRC]
+[2014Aug27 17:06:52,072][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:134][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:52,092][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:162][Anotation: Cargos Control Empresarial - Afiliación y Recarga Agosto 2014]
+[2014Aug27 17:06:52,095][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:167][dateSQL: 2014-08-04]
+[2014Aug27 17:06:52,097][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:168][typeIdNRC: 125]
+[2014Aug27 17:06:52,098][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:169][cuentaKenan: 12344314]
+[2014Aug27 17:06:52,099][DEBUG][1409175369696_M05][execute AgregarNRCDelegator.java:170][montoCargado: 41964]
+[2014Aug27 17:06:52,146][ERROR][1409175369696_M05][execute AgregarNRCDelegator.java:180][Error ocurrido en el delegador AgregarNRCDelegator]
+java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.internal.BasicRemoteRef.invoke(BasicRemoteRef.java:164)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at weblogic.jdbc.rmi.SerialCallableStatement_weblogic_jdbc_rmi_internal_CallableStatementStub_weblogic_jdbc_rmi_internal_CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_814_WLStub.execute(Unknown Source)
+	at ve.com.digitel.controlemp.delegator.AgregarNRCDelegator.execute(AgregarNRCDelegator.java:173)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeProcAgregarNRC(RCHelper.java:340)
+	at ve.com.digitel.controlemp.rc.RC.procesarCierre(RC.java:571)
+	at ve.com.digitel.controlemp.rc.RC.procesarPreCierre(RC.java:287)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:762)
+Caused by: java.sql.SQLException: ORA-20001: 195123, TRIG: INSERT/UPDATE Failed: effective_date is outside active range of account.
+ORA-06512: at "ARBOR.NRC_VIEW_ACTRIG", line 161
+ORA-04088: error during execution of trigger 'ARBOR.NRC_VIEW_ACTRIG'
+ORA-06512: at "CONTROLEMP.PROCESO_PKG", line 160
+ORA-06512: at line 1
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:125)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:305)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:272)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:623)
+	at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:180)
+	at oracle.jdbc.driver.T4CCallableStatement.execute_for_rows(T4CCallableStatement.java:783)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1027)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:2885)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:2976)
+	at oracle.jdbc.driver.OracleCallableStatement.execute(OracleCallableStatement.java:4103)
+	at weblogic.jdbc.wrapper.PreparedStatement.execute(PreparedStatement.java:102)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement.execute(Unknown Source)
+	at weblogic.jdbc.rmi.internal.CallableStatementImpl_weblogic_jdbc_wrapper_CallableStatement_oracle_jdbc_driver_T4CCallableStatement_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2014Aug27 17:06:52,166][DEBUG][1409175369696_M05][executeProcCerrarContrato RCHelper.java:309][RCHelper executeProcCerrarContrato]
+[2014Aug27 17:06:52,180][DEBUG][1409175369696_M05][init CerrarContratoDelegator.java:84][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2014Aug27 17:06:52,208][DEBUG][1409175369696_M05][execute CerrarContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2014Aug27 17:06:52,550][INFO ][1409175369696_M05][execute CerrarContratoDelegator.java:137][Resultado CerrarContrato Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}} - 8396]
+[2014Aug27 17:06:52,696][INFO ][1409175369696_M05][procesarCierre RC.java:621][Cierre de Contratos: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:52,706][INFO ][1409175369696_M05][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:52,707][INFO ][1409175369696_M05][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2014Aug27 17:06:52,708][INFO ][1409175369696_M05][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2014Aug27 17:06:52,710][DEBUG][1409175369696_M05][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2014Aug27 17:07:28,455][ERROR][1409175369696_M05][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)

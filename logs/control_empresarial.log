@@ -1,0 +1,5 @@
+[2020Sep22 13:19:45,861][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2020Sep22 13:19:45,898][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2020Sep22 13:19:45,914][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2020Sep22 13:19:45,917][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 0]
+[2020Sep22 13:19:45,920][ERROR][][main RC.java:779][Debe ingresar el tipo de Proceso y el CICLO (M03 - M05) como argumentos para la ejecucion]

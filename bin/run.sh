@@ -1,0 +1,1 @@
+java -d64 -classpath .:../lib/log4j-1.2.15.jar:../lib/j2ee.jar:../lib/classes12.jar:../lib/commons-jxpath-1.2.jar:../lib/jdom.jar:../lib/bssintutils.jar:../lib/commons-codec-1.3.jar:../lib/commons-logging-1.1.1.jar:../lib/commons-httpclient-3.1.jar:../lib/weblogic.jar:$CLASSPATH ve.com.digitel.controlemp.rc.RC $1 $2 $3

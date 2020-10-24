@@ -1,0 +1,56 @@
+[2016Jul29 13:37:38,691][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2016Jul29 13:37:38,719][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2016Jul29 13:37:38,838][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2016Jul29 13:37:38,841][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 0]
+[2016Jul29 13:37:38,844][ERROR][][main RC.java:779][Debe ingresar el tipo de Proceso y el CICLO (M03 - M05) como argumentos para la ejecucion]
+[2016Jul29 13:38:03,620][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2016Jul29 13:38:03,643][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2016Jul29 13:38:03,678][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2016Jul29 13:38:03,682][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2016Jul29 13:38:03,685][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2016Jul29 13:38:03,688][INFO ][][main RC.java:737][args[1] = M03]
+[2016Jul29 13:38:03,692][INFO ][1469815683692_M03][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2016Jul29 13:38:03,708][DEBUG][1469815683692_M03][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2016Jul29 13:38:03,745][DEBUG][1469815683692_M03][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2016Jul29 13:38:12,265][DEBUG][1469815683692_M03][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2016Jul29 13:38:17,677][INFO ][1469815683692_M03][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7744537}}]
+[2016Jul29 13:38:17,930][INFO ][1469815683692_M03][procesarPreCierre RC.java:124][Id de proceso generado: 7744537]
+[2016Jul29 13:38:17,932][DEBUG][1469815683692_M03][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2016Jul29 13:38:17,952][DEBUG][1469815683692_M03][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2016Jul29 13:38:18,042][DEBUG][1469815683692_M03][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2016Jul29 13:38:21,135][INFO ][1469815683692_M03][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2016Jul29 13:38:22,346][INFO ][1469815683692_M03][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2016Jul29 13:38:22,441][DEBUG][1469815683692_M03][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2016Jul29 13:38:22,469][INFO ][1469815683692_M03][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2016Jul29 13:38:22,472][DEBUG][1469815683692_M03][validarCuenta KenanDelegator.java:167][Cuenta 12343296 Invalida. Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2016Jul29 13:38:22,474][INFO ][1469815683692_M03][procesarPreCierre RC.java:258][Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2016Jul29 13:38:22,475][DEBUG][1469815683692_M03][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2016Jul29 13:38:22,495][DEBUG][1469815683692_M03][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2016Jul29 13:38:22,693][DEBUG][1469815683692_M03][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2016Jul29 13:38:22,808][INFO ][1469815683692_M03][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2016Jul29 13:38:22,876][INFO ][1469815683692_M03][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2016Jul29 13:38:22,885][DEBUG][1469815683692_M03][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2016Jul29 13:38:22,896][DEBUG][1469815683692_M03][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2016Jul29 13:38:22,989][DEBUG][1469815683692_M03][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2016Jul29 13:38:23,235][INFO ][1469815683692_M03][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan T_LPR_Fijo_Control_Super={descripcionProducto=Plan T_LPR_Fijo_Control_Super, idProducto=2126, costoVigenteProducto=62050, nombreProducto=BAS-MAS-PRE-PLAN-00051}, Plan T_LPR_Premium_Control={descripcionProducto=Plan T_LPR_Premium_Control, idProducto=2130, costoVigenteProducto=28300, nombreProducto=MOV-MAS-PRE-PLAN-00373}, Plan T_LPR_Super_Control={descripcionProducto=Plan T_LPR_Super_Control, idProducto=2123, costoVigenteProducto=34925, nombreProducto=MOV-MAS-PRE-PLAN-00376}, Plan T_LPR_Mega_Plus_Control={descripcionProducto=Plan T_LPR_Mega_Plus_Control, idProducto=2129, costoVigenteProducto=91725, nombreProducto=MOV-MAS-PRE-PLAN-00364}, Plan T_LPR_Plus_Control={descripcionProducto=Plan T_LPR_Plus_Control, idProducto=2125, costoVigenteProducto=18050, nombreProducto=MOV-MAS-PRE-PLAN-00372}, Plan T_LPR_Platinum_Control={descripcionProducto=Plan T_LPR_Platinum_Control, idProducto=2131, costoVigenteProducto=49375, nombreProducto=MOV-MAS-PRE-PLAN-00371}, Plan T_LPR_Microempresa_Control={descripcionProducto=Plan T_LPR_Microempresa_Control, idProducto=2124, costoVigenteProducto=9025, nombreProducto=MOV-MAS-PRE-PLAN-00365}, Plan T_LPR_Mega_Control={descripcionProducto=Plan T_LPR_Mega_Control, idProducto=2128, costoVigenteProducto=60700, nombreProducto=MOV-MAS-PRE-PLAN-00363}, Plan T_LPR_Fijo_Control_Plus={descripcionProducto=Plan T_LPR_Fijo_Control_Plus, idProducto=2127, costoVigenteProducto=31025, nombreProducto=BAS-MAS-PRE-PLAN-00050}}}]
+[2016Jul29 13:38:23,246][DEBUG][1469815683692_M03][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2016Jul29 13:38:23,255][DEBUG][1469815683692_M03][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2016Jul29 13:38:23,326][DEBUG][1469815683692_M03][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2016Jul29 13:38:23,432][INFO ][1469815683692_M03][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2016Jul29 13:38:23,616][INFO ][1469815683692_M03][procesarCierre RC.java:625][No existen Procesos por CERRAR]
+[2016Jul29 13:38:23,624][INFO ][1469815683692_M03][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 200 | reasonCode: No existen Procesos por CERRAR | info:  | vto: {}}]
+[2016Jul29 13:38:23,626][INFO ][1469815683692_M03][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2016Jul29 13:38:23,627][INFO ][1469815683692_M03][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 200 | reasonCode: No existen Procesos por CERRAR | info:  | vto: {}}]
+[2016Jul29 13:38:23,629][DEBUG][1469815683692_M03][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2016Jul29 13:38:59,238][ERROR][1469815683692_M03][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)

@@ -1,0 +1,298 @@
+[2015Nov16 16:44:26,694][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2015Nov16 16:44:26,723][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2015Nov16 16:44:26,810][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2015Nov16 16:44:26,814][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2015Nov16 16:44:26,817][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2015Nov16 16:44:26,820][INFO ][][main RC.java:737][args[1] = M05]
+[2015Nov16 16:44:26,824][INFO ][1447708466823_M05][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov16 16:44:26,840][DEBUG][1447708466823_M05][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2015Nov16 16:44:26,867][DEBUG][1447708466823_M05][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:44:35,248][DEBUG][1447708466823_M05][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:38,847][INFO ][1447708466823_M05][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7731577}}]
+[2015Nov16 16:44:39,048][INFO ][1447708466823_M05][procesarPreCierre RC.java:124][Id de proceso generado: 7731577]
+[2015Nov16 16:44:39,051][DEBUG][1447708466823_M05][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2015Nov16 16:44:39,066][DEBUG][1447708466823_M05][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:44:39,155][DEBUG][1447708466823_M05][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:41,517][INFO ][1447708466823_M05][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov16 16:44:42,900][INFO ][1447708466823_M05][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2015Nov16 16:44:42,921][DEBUG][1447708466823_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2015Nov16 16:44:42,949][INFO ][1447708466823_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2015Nov16 16:44:42,952][DEBUG][1447708466823_M05][validarCuenta KenanDelegator.java:167][Cuenta 12344314 Invalida. Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2015Nov16 16:44:42,954][INFO ][1447708466823_M05][procesarPreCierre RC.java:258][Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2015Nov16 16:44:42,956][DEBUG][1447708466823_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2015Nov16 16:44:42,976][DEBUG][1447708466823_M05][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:44:43,204][DEBUG][1447708466823_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:43,322][INFO ][1447708466823_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:43,431][DEBUG][1447708466823_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2015Nov16 16:44:43,433][INFO ][1447708466823_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2015Nov16 16:44:43,435][DEBUG][1447708466823_M05][executeProcIsDirectNRC RCHelper.java:325][RCHelper executeProcIsDirectNRC]
+[2015Nov16 16:44:43,454][DEBUG][1447708466823_M05][init IsDirectNRCDelegator.java:86][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:44:43,526][DEBUG][1447708466823_M05][execute IsDirectNRCDelegator.java:127][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:43,621][INFO ][1447708466823_M05][execute IsDirectNRCDelegator.java:145][Resultado IsRedirectNRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.isredirectnrc(?, ?) ejecutado con exito | info:  | vto: {isRedirect=0}}]
+[2015Nov16 16:44:43,629][DEBUG][1447708466823_M05][validarRedirectCuenta RCHelper.java:379][RCHelper validarRedirectCuenta]
+[2015Nov16 16:44:43,631][INFO ][1447708466823_M05][validarRedirectCuenta KenanDelegator.java:125][La funcion RedirectStatus fue FALSO ]
+[2015Nov16 16:44:43,633][DEBUG][1447708466823_M05][executeValidarCuentaSIR RCHelper.java:397][RCHelper executeValidarCuentaSIR]
+[2015Nov16 16:44:43,668][DEBUG][1447708466823_M05][init ListaNegraDelegator.java:87][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:44:43,737][DEBUG][1447708466823_M05][execute ListaNegraDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:45,292][INFO ][1447708466823_M05][execute ListaNegraDelegator.java:148][Resultado Validar Cuenta SIR: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta SIR ejecutado con exito | info:  | vto: {existe=N}}]
+[2015Nov16 16:44:45,371][DEBUG][1447708466823_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2015Nov16 16:44:45,525][DEBUG][1447708466823_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:46,132][INFO ][1447708466823_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:46,227][INFO ][1447708466823_M05][procesarPreCierre RC.java:174][La Cuenta: 12344339 ha sido actualizada con status Parcialmente Ejecutado]
+[2015Nov16 16:44:46,229][DEBUG][1447708466823_M05][executeValidarEstatus RCHelper.java:366][RCHelper executeValidarEstatus]
+[2015Nov16 16:44:46,231][DEBUG][1447708466823_M05][executeProcObtenerBeneficiario RCHelper.java:122][RCHelper executeProcobtenerBeneficiario]
+[2015Nov16 16:44:46,239][DEBUG][1447708466823_M05][init ObtenerBeneficiarioDelegator.java:89][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:44:46,286][DEBUG][1447708466823_M05][execute ObtenerBeneficiarioDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:46,376][INFO ][1447708466823_M05][execute ObtenerBeneficiarioDelegator.java:151][Resultado Obtener Beneficiario: Procedure: PROCESO_PKG.obtenerBeneficiary(?, ?, ?, ?) ejecutado con exito]
+[2015Nov16 16:44:46,831][DEBUG][1447708466823_M05][executeProcCrearDetalleProceso RCHelper.java:142][RCHelper executeProcCrearDetalleProceso]
+[2015Nov16 16:44:46,840][DEBUG][1447708466823_M05][init CrearDetalleProcesoDelegator.java:90][Metodo de inicializacion de contexto para CrearDetalleProcesoDelegator]
+[2015Nov16 16:44:46,971][DEBUG][1447708466823_M05][execute CrearDetalleProcesoDelegator.java:135][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:47,057][INFO ][1447708466823_M05][execute CrearDetalleProcesoDelegator.java:153][Detalle de proceso generado. IdDetalleProceso: 165694571 para el GSM: 584122696571]
+[2015Nov16 16:44:47,059][INFO ][1447708466823_M05][execute CrearDetalleProcesoDelegator.java:158][Resultado: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearDetalleProceso(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {idDetalleProceso=165694571}}]
+[2015Nov16 16:44:47,142][INFO ][1447708466823_M05][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2015Nov16 16:44:47,152][DEBUG][1447708466823_M05][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2015Nov16 16:44:47,161][DEBUG][1447708466823_M05][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2015Nov16 16:44:47,201][DEBUG][1447708466823_M05][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:47,524][INFO ][1447708466823_M05][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan Mega Plus Control={descripcionProducto=Plan Mega Plus Control, idProducto=1619, costoVigenteProducto=83404, nombreProducto=MOV-MAS-PRE-PLAN-00147}, Plan Mega Control={descripcionProducto=Plan Mega Control, idProducto=1617, costoVigenteProducto=55194, nombreProducto=MOV-MAS-PRE-PLAN-00145}, Plan Platinum Control ZF={descripcionProducto=Plan Platinum Control ZF, idProducto=2104, costoVigenteProducto=44900, nombreProducto=MOV-MAS-PRE-PLAN-00096}, Plan Super Control={descripcionProducto=Plan Super Control, idProducto=4, costoVigenteProducto=31758, nombreProducto=MOV-MAS-PRE-PLAN-00064}, Plan Premium Control={descripcionProducto=Plan Premium Control, idProducto=2101, costoVigenteProducto=25733, nombreProducto=MOV-MAS-PRE-PLAN-00093}, Plan Fijo Control Super={descripcionProducto=Plan Fijo Control Super, idProducto=41, costoVigenteProducto=56420, nombreProducto=BAS-MAS-PRE-PLAN-00015}, Plan Mega Control ZF={descripcionProducto=Plan Mega Control ZF, idProducto=1618, costoVigenteProducto=55194, nombreProducto=MOV-MAS-PRE-PLAN-00146}, Plan Fijo Control Plus ZF={descripcionProducto=Plan Fijo Control Plus ZF, idProducto=44, costoVigenteProducto=28209, nombreProducto=BAS-MAS-PRE-PLAN-00018}, Plan Fijo Control Super ZF={descripcionProducto=Plan Fijo Control Super ZF, idProducto=42, costoVigenteProducto=56420, nombreProducto=BAS-MAS-PRE-PLAN-00016}, Plan Mega Plus Control ZF={descripcionProducto=Plan Mega Plus Control ZF, idProducto=1620, costoVigenteProducto=83404, nombreProducto=MOV-MAS-PRE-PLAN-00148}, Plan Super Control ZF={descripcionProducto=Plan Super Control ZF, idProducto=27, costoVigenteProducto=31758, nombreProducto=MOV-MAS-PRE-PLAN-00065}, Plan Plus Control={descripcionProducto=Plan Plus Control, idProducto=31, costoVigenteProducto=16426, nombreProducto=MOV-MAS-PRE-PLAN-00066}, Plan Platinum Control={descripcionProducto=Plan Platinum Control, idProducto=2103, costoVigenteProducto=44900, nombreProducto=MOV-MAS-PRE-PLAN-00095}, Plan Microempresa Control ZF={descripcionProducto=Plan Microempresa Control ZF, idProducto=3, costoVigenteProducto=8212, nombreProducto=MOV-MAS-PRE-PLAN-00063}, Plan Microempresa Control={descripcionProducto=Plan Microempresa Control, idProducto=23, costoVigenteProducto=8212, nombreProducto=MOV-MAS-PRE-PLAN-00062}, Plan Plus Control ZF={descripcionProducto=Plan Plus Control ZF, idProducto=32, costoVigenteProducto=16426, nombreProducto=MOV-MAS-PRE-PLAN-00067}, Plan Premium Control ZF={descripcionProducto=Plan Premium Control ZF, idProducto=2102, costoVigenteProducto=25733, nombreProducto=MOV-MAS-PRE-PLAN-00094}, Plan Fijo Control Plus={descripcionProducto=Plan Fijo Control Plus, idProducto=43, costoVigenteProducto=28209, nombreProducto=BAS-MAS-PRE-PLAN-00017}}}]
+[2015Nov16 16:44:47,534][DEBUG][1447708466823_M05][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2015Nov16 16:44:47,542][DEBUG][1447708466823_M05][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2015Nov16 16:44:47,581][DEBUG][1447708466823_M05][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:47,651][INFO ][1447708466823_M05][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2015Nov16 16:44:47,934][INFO ][1447708466823_M05][procesarCierre RC.java:357][Inicio de procesamiento de contratos por CERRAR]
+[2015Nov16 16:44:47,940][INFO ][1447708466823_M05][procesarCierre RC.java:362][Inicio de procesamiento de contrato: 8397]
+[2015Nov16 16:44:47,941][DEBUG][1447708466823_M05][executeProcCrearBatchDebito RCHelper.java:176][RCHelper executeProcCrearBatchDebito]
+[2015Nov16 16:44:47,957][DEBUG][1447708466823_M05][init CrearBatchDebitoDelegator.java:85][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:44:47,997][DEBUG][1447708466823_M05][execute CrearBatchDebitoDelegator.java:126][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:48,045][DEBUG][1447708466823_M05][execute CrearBatchDebitoDelegator.java:140][Detalle de proceso generado. IdBatchDebito: 14704319]
+[2015Nov16 16:44:48,047][INFO ][1447708466823_M05][execute CrearBatchDebitoDelegator.java:148][Resultado Crear Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearBatchDebito(?, ?, ?) ejecutado con exito | info:  | vto: {idBatchDebito=14704319}}]
+[2015Nov16 16:44:48,121][DEBUG][1447708466823_M05][executeProcObtenerBeneficiarioCierre RCHelper.java:241][RCHelper executeObtenerBeneficiarioCierre]
+[2015Nov16 16:44:48,130][DEBUG][1447708466823_M05][init ObtenerBeneficiarioCierreDelegator.java:90][Metodo de inicializacion de contexto para ObtenerBeneficiarioCierreDelegator]
+[2015Nov16 16:44:48,168][DEBUG][1447708466823_M05][execute ObtenerBeneficiarioCierreDelegator.java:131][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:48,238][INFO ][1447708466823_M05][execute ObtenerBeneficiarioCierreDelegator.java:153][Resultado Obtener Beneficiario Cierre: 0]
+[2015Nov16 16:44:51,732][DEBUG][1447708466823_M05][procesarCierre RC.java:382][CONTADOR GSM: 0]
+[2015Nov16 16:44:51,740][DEBUG][1447708466823_M05][executeRetrieveSubscriberRTBS RCHelper.java:207][RCHelper executeRetrieveSubscriberRTBS]
+[2015Nov16 16:44:51,793][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${username}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>${suscriberID}</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov16 16:44:51,796][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2015Nov16 16:44:51,798][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: username]
+[2015Nov16 16:44:51,800][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2015Nov16 16:44:51,802][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2015Nov16 16:44:51,804][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>]
+[2015Nov16 16:44:51,806][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2015Nov16 16:44:51,808][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>]
+[2015Nov16 16:44:51,810][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: suscriberID]
+[2015Nov16 16:44:51,812][DEBUG][1447708466823_M05][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov16 16:44:52,257][DEBUG][1447708466823_M05][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov16 16:44:52,260][DEBUG][1447708466823_M05][buildSOAPBody RetrieveSubscriberRTBSDelegator.java:183][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18097747" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>weblogic</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>4cipKrJU1NirIj2eSceA7g==</wsse:Nonce>
+            <wsu:Created>2015-11-16T16:44:52.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion/>
+         <!--Optional:-->
+         <ccws:CustomerVersion/>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveSubscriberWithIdentityNoHistory>
+         <!--Optional:-->
+         <ccws:subscriberID>584122696571</ccws:subscriberID>
+         <!--Optional:-->
+         <ccws:identity/>
+         <ccws:informationToRetrieve>1</ccws:informationToRetrieve>
+      </ccws:RetrieveSubscriberWithIdentityNoHistory>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov16 16:44:54,252][DEBUG][1447708466823_M05][execute RetrieveSubscriberRTBSDelegator.java:145][Retrieve Subscriber 584122696571 - ve.com.digitel.bssint.ReturnValue{ | condCode: 4006 | reasonCode: Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [584122696571] at refDateTime [2015-11-16T16:44:53.844-04:30] in the database. caused by No entity found for query | info:  | vto: {}}]
+[2015Nov16 16:44:54,254][DEBUG][1447708466823_M05][executeProcCrearNotaBatchDebito RCHelper.java:258][RCHelper executeProcCrearNotaBatchDebito]
+[2015Nov16 16:44:54,263][DEBUG][1447708466823_M05][init CrearNotaBatchDebitoDelegator.java:89][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:44:54,301][DEBUG][1447708466823_M05][execute CrearNotaBatchDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:54,372][INFO ][1447708466823_M05][execute CrearNotaBatchDebitoDelegator.java:152][Resultado Crear Nota Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearNotaBatchDebito(?, ?, ?, ?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:54,469][ERROR][1447708466823_M05][procesarCierre RC.java:498][Error consultando el gsm: 584122696571 en RTBS. Error unknown : B-DBA-00801 - [B-DBA-00801] [DbGetAccount] Cannot find an account identified by the extIdTypeCodeId [MSISDN] with extId [584122696571] at refDateTime [2015-11-16T16:44:53.844-04:30] in the database. caused by No entity found for query]
+[2015Nov16 16:44:54,485][DEBUG][1447708466823_M05][executeProcObtenerMontosCargo RCHelper.java:275][RCHelper executeProcObtenerMontosCargo]
+[2015Nov16 16:44:54,493][DEBUG][1447708466823_M05][init ObtenerMontosCargosDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:44:54,528][DEBUG][1447708466823_M05][execute ObtenerMontosCargosDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:54,586][INFO ][1447708466823_M05][execute ObtenerMontosCargosDelegator.java:147][Resultado Obtener Montos Cargos: 0]
+[2015Nov16 16:44:54,951][DEBUG][1447708466823_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov16 16:44:54,967][DEBUG][1447708466823_M05][init ActualizarNotaDebitoDelegator.java:89][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov16 16:44:54,998][DEBUG][1447708466823_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:55,599][INFO ][1447708466823_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:55,711][DEBUG][1447708466823_M05][executeProcCerrarContrato RCHelper.java:309][RCHelper executeProcCerrarContrato]
+[2015Nov16 16:44:55,720][DEBUG][1447708466823_M05][init CerrarContratoDelegator.java:84][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov16 16:44:55,763][DEBUG][1447708466823_M05][execute CerrarContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:44:55,930][INFO ][1447708466823_M05][execute CerrarContratoDelegator.java:137][Resultado CerrarContrato Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}} - 8397]
+[2015Nov16 16:44:56,008][INFO ][1447708466823_M05][procesarCierre RC.java:621][Cierre de Contratos: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:56,020][INFO ][1447708466823_M05][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:56,022][INFO ][1447708466823_M05][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov16 16:44:56,023][INFO ][1447708466823_M05][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:44:56,025][DEBUG][1447708466823_M05][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2015Nov16 16:45:31,531][ERROR][1447708466823_M05][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)
+[2015Nov16 16:52:37,086][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ControlEmp - VERSION: 1.0]
+[2015Nov16 16:52:37,124][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Control Empresarial - ]
+[2015Nov16 16:52:37,172][INFO ][][main RC.java:733][################## CONTROL EMPRESARIAL ##################]
+[2015Nov16 16:52:37,175][INFO ][][main RC.java:735][Cantidad de parametros recibidos: 2]
+[2015Nov16 16:52:37,178][INFO ][][main RC.java:737][args[0] = PreCierre]
+[2015Nov16 16:52:37,181][INFO ][][main RC.java:737][args[1] = M05]
+[2015Nov16 16:52:37,185][INFO ][1447708957185_M05][procesarPreCierre RC.java:109][INICIO de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov16 16:52:37,200][DEBUG][1447708957185_M05][executeProcCrearProceso RCHelper.java:71][RCHelper executeProcCrearProceso]
+[2015Nov16 16:52:37,216][DEBUG][1447708957185_M05][init CrearProcesoDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:43,513][DEBUG][1447708957185_M05][execute CrearProcesoDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:46,498][INFO ][1447708957185_M05][execute CrearProcesoDelegator.java:146][Resultado Crear Proceso: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProceso(?, ?, ?, ?) ejecutado con exito | info:  | vto: {idProceso=7731847}}]
+[2015Nov16 16:52:46,587][INFO ][1447708957185_M05][procesarPreCierre RC.java:124][Id de proceso generado: 7731847]
+[2015Nov16 16:52:46,589][DEBUG][1447708957185_M05][executeProcObtenerContratosPreCerrar RCHelper.java:88][RCHelper executeProcObtenerContratosPreCerrar]
+[2015Nov16 16:52:46,597][DEBUG][1447708957185_M05][init ObtenerContratosPreCerrarDelegator.java:86][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:46,686][DEBUG][1447708957185_M05][execute ObtenerContratosPreCerrarDelegator.java:129][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:48,809][INFO ][1447708957185_M05][execute ObtenerContratosPreCerrarDelegator.java:148][Resultado Obtener Contratos PreCerrar: 0]
+[2015Nov16 16:52:49,584][INFO ][1447708957185_M05][procesarPreCierre RC.java:137][Inicio de procesamiento de contratos por PRE-CERRAR]
+[2015Nov16 16:52:49,604][DEBUG][1447708957185_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2015Nov16 16:52:49,626][INFO ][1447708957185_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2015Nov16 16:52:49,628][DEBUG][1447708957185_M05][validarCuenta KenanDelegator.java:167][Cuenta 12344314 Invalida. Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2015Nov16 16:52:49,630][INFO ][1447708957185_M05][procesarPreCierre RC.java:258][Cuenta Invalida. La cuenta posee solo planes de Suspension o Robo]
+[2015Nov16 16:52:49,632][DEBUG][1447708957185_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2015Nov16 16:52:49,651][DEBUG][1447708957185_M05][init CrearProcesoContratoDelegator.java:84][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:49,748][DEBUG][1447708957185_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:49,867][INFO ][1447708957185_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:50,020][DEBUG][1447708957185_M05][executeValidarCuentaKenan RCHelper.java:351][RCHelper executeValidarCuentaKenan]
+[2015Nov16 16:52:50,022][INFO ][1447708957185_M05][validarCuenta KenanDelegator.java:145][Ejecutando validarCuenta en KenanDelegator]
+[2015Nov16 16:52:50,024][DEBUG][1447708957185_M05][executeProcIsDirectNRC RCHelper.java:325][RCHelper executeProcIsDirectNRC]
+[2015Nov16 16:52:50,042][DEBUG][1447708957185_M05][init IsDirectNRCDelegator.java:86][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:52:50,116][DEBUG][1447708957185_M05][execute IsDirectNRCDelegator.java:127][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:50,203][INFO ][1447708957185_M05][execute IsDirectNRCDelegator.java:145][Resultado IsRedirectNRC: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.isredirectnrc(?, ?) ejecutado con exito | info:  | vto: {isRedirect=0}}]
+[2015Nov16 16:52:50,211][DEBUG][1447708957185_M05][validarRedirectCuenta RCHelper.java:379][RCHelper validarRedirectCuenta]
+[2015Nov16 16:52:50,213][INFO ][1447708957185_M05][validarRedirectCuenta KenanDelegator.java:125][La funcion RedirectStatus fue FALSO ]
+[2015Nov16 16:52:50,215][DEBUG][1447708957185_M05][executeValidarCuentaSIR RCHelper.java:397][RCHelper executeValidarCuentaSIR]
+[2015Nov16 16:52:50,232][DEBUG][1447708957185_M05][init ListaNegraDelegator.java:87][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:52:50,302][DEBUG][1447708957185_M05][execute ListaNegraDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:51,656][INFO ][1447708957185_M05][execute ListaNegraDelegator.java:148][Resultado Validar Cuenta SIR: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Consulta SIR ejecutado con exito | info:  | vto: {existe=N}}]
+[2015Nov16 16:52:51,797][DEBUG][1447708957185_M05][executeProcCrearProcesoContrato RCHelper.java:105][RCHelper executeProcCrearProcesoContrato]
+[2015Nov16 16:52:51,922][DEBUG][1447708957185_M05][execute CrearProcesoContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:52,291][INFO ][1447708957185_M05][execute CrearProcesoContratoDelegator.java:138][Resultado Crear Proceso Contrato: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearProcesoContrato(?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:52,384][INFO ][1447708957185_M05][procesarPreCierre RC.java:174][La Cuenta: 12344339 ha sido actualizada con status Parcialmente Ejecutado]
+[2015Nov16 16:52:52,385][DEBUG][1447708957185_M05][executeValidarEstatus RCHelper.java:366][RCHelper executeValidarEstatus]
+[2015Nov16 16:52:52,387][DEBUG][1447708957185_M05][executeProcObtenerBeneficiario RCHelper.java:122][RCHelper executeProcobtenerBeneficiario]
+[2015Nov16 16:52:52,394][DEBUG][1447708957185_M05][init ObtenerBeneficiarioDelegator.java:89][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:52,442][DEBUG][1447708957185_M05][execute ObtenerBeneficiarioDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:52,532][INFO ][1447708957185_M05][execute ObtenerBeneficiarioDelegator.java:151][Resultado Obtener Beneficiario: Procedure: PROCESO_PKG.obtenerBeneficiary(?, ?, ?, ?) ejecutado con exito]
+[2015Nov16 16:52:52,994][INFO ][1447708957185_M05][procesarPreCierre RC.java:275][### Resultado Ejecucion PRE-CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Finalizacion de proceso de PRE-CIERRE | info:  | vto: {}}]
+[2015Nov16 16:52:53,004][DEBUG][1447708957185_M05][executeProcObtenerProducto RCHelper.java:193][RCHelper executeProcObtenerProducto]
+[2015Nov16 16:52:53,014][DEBUG][1447708957185_M05][init ObtenerProductoDelegator.java:89][Metodo de inicializacion de contexto para ObtenerProductoDelegator]
+[2015Nov16 16:52:53,064][DEBUG][1447708957185_M05][execute ObtenerProductoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:53,380][INFO ][1447708957185_M05][execute ObtenerProductoDelegator.java:161][Resultado Obtener Producto: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.obtenerProductoNRC(?, ?) ejecutado con exito | info:  | vto: {Plan Mega Plus Control={descripcionProducto=Plan Mega Plus Control, idProducto=1619, costoVigenteProducto=83404, nombreProducto=MOV-MAS-PRE-PLAN-00147}, Plan Mega Control={descripcionProducto=Plan Mega Control, idProducto=1617, costoVigenteProducto=55194, nombreProducto=MOV-MAS-PRE-PLAN-00145}, Plan Platinum Control ZF={descripcionProducto=Plan Platinum Control ZF, idProducto=2104, costoVigenteProducto=44900, nombreProducto=MOV-MAS-PRE-PLAN-00096}, Plan Super Control={descripcionProducto=Plan Super Control, idProducto=4, costoVigenteProducto=31758, nombreProducto=MOV-MAS-PRE-PLAN-00064}, Plan Premium Control={descripcionProducto=Plan Premium Control, idProducto=2101, costoVigenteProducto=25733, nombreProducto=MOV-MAS-PRE-PLAN-00093}, Plan Fijo Control Super={descripcionProducto=Plan Fijo Control Super, idProducto=41, costoVigenteProducto=56420, nombreProducto=BAS-MAS-PRE-PLAN-00015}, Plan Mega Control ZF={descripcionProducto=Plan Mega Control ZF, idProducto=1618, costoVigenteProducto=55194, nombreProducto=MOV-MAS-PRE-PLAN-00146}, Plan Fijo Control Plus ZF={descripcionProducto=Plan Fijo Control Plus ZF, idProducto=44, costoVigenteProducto=28209, nombreProducto=BAS-MAS-PRE-PLAN-00018}, Plan Fijo Control Super ZF={descripcionProducto=Plan Fijo Control Super ZF, idProducto=42, costoVigenteProducto=56420, nombreProducto=BAS-MAS-PRE-PLAN-00016}, Plan Mega Plus Control ZF={descripcionProducto=Plan Mega Plus Control ZF, idProducto=1620, costoVigenteProducto=83404, nombreProducto=MOV-MAS-PRE-PLAN-00148}, Plan Super Control ZF={descripcionProducto=Plan Super Control ZF, idProducto=27, costoVigenteProducto=31758, nombreProducto=MOV-MAS-PRE-PLAN-00065}, Plan Plus Control={descripcionProducto=Plan Plus Control, idProducto=31, costoVigenteProducto=16426, nombreProducto=MOV-MAS-PRE-PLAN-00066}, Plan Platinum Control={descripcionProducto=Plan Platinum Control, idProducto=2103, costoVigenteProducto=44900, nombreProducto=MOV-MAS-PRE-PLAN-00095}, Plan Microempresa Control ZF={descripcionProducto=Plan Microempresa Control ZF, idProducto=3, costoVigenteProducto=8212, nombreProducto=MOV-MAS-PRE-PLAN-00063}, Plan Microempresa Control={descripcionProducto=Plan Microempresa Control, idProducto=23, costoVigenteProducto=8212, nombreProducto=MOV-MAS-PRE-PLAN-00062}, Plan Plus Control ZF={descripcionProducto=Plan Plus Control ZF, idProducto=32, costoVigenteProducto=16426, nombreProducto=MOV-MAS-PRE-PLAN-00067}, Plan Premium Control ZF={descripcionProducto=Plan Premium Control ZF, idProducto=2102, costoVigenteProducto=25733, nombreProducto=MOV-MAS-PRE-PLAN-00094}, Plan Fijo Control Plus={descripcionProducto=Plan Fijo Control Plus, idProducto=43, costoVigenteProducto=28209, nombreProducto=BAS-MAS-PRE-PLAN-00017}}}]
+[2015Nov16 16:52:53,390][DEBUG][1447708957185_M05][executeProcObtenerContratosCerrar RCHelper.java:159][RCHelper executeProcObtenerContratosCerrar]
+[2015Nov16 16:52:53,398][DEBUG][1447708957185_M05][init ObtenerContratosCerrarDelegator.java:87][Metodo de inicializacion de contexto para ObtenerContratosCerrarDelegator]
+[2015Nov16 16:52:53,436][DEBUG][1447708957185_M05][execute ObtenerContratosCerrarDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:53,504][INFO ][1447708957185_M05][execute ObtenerContratosCerrarDelegator.java:148][Resultado Obtener Contratos Cerrar: 0]
+[2015Nov16 16:52:53,540][INFO ][1447708957185_M05][procesarCierre RC.java:357][Inicio de procesamiento de contratos por CERRAR]
+[2015Nov16 16:52:53,545][INFO ][1447708957185_M05][procesarCierre RC.java:362][Inicio de procesamiento de contrato: 8397]
+[2015Nov16 16:52:53,547][DEBUG][1447708957185_M05][executeProcCrearBatchDebito RCHelper.java:176][RCHelper executeProcCrearBatchDebito]
+[2015Nov16 16:52:53,555][DEBUG][1447708957185_M05][init CrearBatchDebitoDelegator.java:85][Metodo de inicializacion de contexto para CrearBatchDebitoDelegator]
+[2015Nov16 16:52:53,593][DEBUG][1447708957185_M05][execute CrearBatchDebitoDelegator.java:126][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:53,639][DEBUG][1447708957185_M05][execute CrearBatchDebitoDelegator.java:140][Detalle de proceso generado. IdBatchDebito: 14704589]
+[2015Nov16 16:52:53,641][INFO ][1447708957185_M05][execute CrearBatchDebitoDelegator.java:148][Resultado Crear Batch Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.crearBatchDebito(?, ?, ?) ejecutado con exito | info:  | vto: {idBatchDebito=14704589}}]
+[2015Nov16 16:52:53,785][DEBUG][1447708957185_M05][executeProcObtenerBeneficiarioCierre RCHelper.java:241][RCHelper executeObtenerBeneficiarioCierre]
+[2015Nov16 16:52:53,792][DEBUG][1447708957185_M05][init ObtenerBeneficiarioCierreDelegator.java:90][Metodo de inicializacion de contexto para ObtenerBeneficiarioCierreDelegator]
+[2015Nov16 16:52:53,830][DEBUG][1447708957185_M05][execute ObtenerBeneficiarioCierreDelegator.java:131][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:53,902][INFO ][1447708957185_M05][execute ObtenerBeneficiarioCierreDelegator.java:153][Resultado Obtener Beneficiario Cierre: 0]
+[2015Nov16 16:52:56,830][DEBUG][1447708957185_M05][executeObtenerCuentaKenanDelegator RCHelper.java:451][RCHelper executeObtenerCuentaKenanDelegator]
+[2015Nov16 16:52:56,848][DEBUG][1447708957185_M05][init ObtenerCuentaKenanDelegator.java:81][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:56,886][DEBUG][1447708957185_M05][execute ObtenerCuentaKenanDelegator.java:121][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:56,928][INFO ][1447708957185_M05][execute ObtenerCuentaKenanDelegator.java:136][Resultado Obtener Informacion de Cuenta Kenan: 0]
+[2015Nov16 16:52:56,936][INFO ][1447708957185_M05][procesarCierre RC.java:519][No existen Beneficiarios]
+[2015Nov16 16:52:56,946][DEBUG][1447708957185_M05][executeProcObtenerMontosCargo RCHelper.java:275][RCHelper executeProcObtenerMontosCargo]
+[2015Nov16 16:52:56,953][DEBUG][1447708957185_M05][init ObtenerMontosCargosDelegator.java:87][Metodo de inicializacion de contexto para DataBaseDelegator]
+[2015Nov16 16:52:56,990][DEBUG][1447708957185_M05][execute ObtenerMontosCargosDelegator.java:128][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:57,055][INFO ][1447708957185_M05][execute ObtenerMontosCargosDelegator.java:147][Resultado Obtener Montos Cargos: 0]
+[2015Nov16 16:52:57,421][DEBUG][1447708957185_M05][executeProcActualizarNotaDebito RCHelper.java:292][RCHelper executeProcActualizarNotaDebito]
+[2015Nov16 16:52:57,430][DEBUG][1447708957185_M05][init ActualizarNotaDebitoDelegator.java:89][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov16 16:52:57,466][DEBUG][1447708957185_M05][execute ActualizarNotaDebitoDelegator.java:130][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:58,067][INFO ][1447708957185_M05][execute ActualizarNotaDebitoDelegator.java:148][Resultado Actualizar Nota Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.actualizarNotaDebito(?, ?, ?, ?, ?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:58,216][DEBUG][1447708957185_M05][executeProcCerrarContrato RCHelper.java:309][RCHelper executeProcCerrarContrato]
+[2015Nov16 16:52:58,224][DEBUG][1447708957185_M05][init CerrarContratoDelegator.java:84][Metodo de inicializacion de contexto para actualizarnotadebito]
+[2015Nov16 16:52:58,250][DEBUG][1447708957185_M05][execute CerrarContratoDelegator.java:125][Se obtuvo la conexion al DataSource. Accesando a la Base de Datos]
+[2015Nov16 16:52:58,430][INFO ][1447708957185_M05][execute CerrarContratoDelegator.java:137][Resultado CerrarContrato Debito: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}} - 8397]
+[2015Nov16 16:52:58,519][INFO ][1447708957185_M05][procesarCierre RC.java:621][Cierre de Contratos: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:58,536][INFO ][1447708957185_M05][procesarPreCierre RC.java:290][### Resultado Ejecucion CIERRE: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:58,537][INFO ][1447708957185_M05][procesarPreCierre RC.java:314][FIN de proceso mensual CONTROL EMPRESARIAL]
+[2015Nov16 16:52:58,539][INFO ][1447708957185_M05][main RC.java:763][ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Procedure: PROCESO_PKG.cerrarContratos(?) ejecutado con exito | info:  | vto: {}}]
+[2015Nov16 16:52:58,540][DEBUG][1447708957185_M05][executeSendMail RCHelper.java:426][RCHelper executeSendMail]
+[2015Nov16 16:56:09,916][ERROR][1447708957185_M05][sendMail EMailDelegator.java:92][Error durante el envion del email]
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Could not connect to SMTP host: 10.20.20.181, port: 25;
+  nested exception is: 
+	java.net.ConnectException: Connection timed out
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at ve.com.digitel.controlemp.delegator.EMailDelegator.sendMail(EMailDelegator.java:87)
+	at ve.com.digitel.controlemp.rc.RCHelper.executeSendMail(RCHelper.java:428)
+	at ve.com.digitel.controlemp.rc.RC.enviarCorreoResultado(RC.java:714)
+	at ve.com.digitel.controlemp.rc.RC.main(RC.java:765)

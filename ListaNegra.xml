@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EAIMessage xmlns:fo="http://www.w3.org/1999/XSL/Format"
+	MessageId="1-2FIB" IntObjectName="PSPCONBAL">
+	<IBX_ADP_IN_PARAMETERS>
+		<PARAM name="PERSONID" value="${idCuenta}" />
+		<PARAM name="GSM" value="" />
+		<PARAM name="RIF" value="" />
+	</IBX_ADP_IN_PARAMETERS>
+</EAIMessage>

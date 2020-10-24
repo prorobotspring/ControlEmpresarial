@@ -1,0 +1,1 @@
+java -d64 -classpath .:../lib/classes12.jar:../lib/weblogic.jar:$CLASSPATH test.GetTimeStamp
